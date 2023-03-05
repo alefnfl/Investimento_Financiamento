@@ -1,0 +1,21 @@
+body {
+  text-align: justify;
+}
+table {
+  font-size: 75%;
+  border-collapse: collapse;
+  padding: -5px;
+}
+header-includes:
+  - \usepackage{floatrow}
+
+.blackbox {
+  padding: 1em;
+  background: lightgrey;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.center {
+  text-align: center;
+}

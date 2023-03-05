@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Aula 2 Demostrações Contábeis, Impostos e Fluxos de Caixa | Curso Financiamento e Investimento</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Aula 2 Demostrações Contábeis, Impostos e Fluxos de Caixa | Curso Financiamento e Investimento" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  <meta name="github-repo" content="rstudio/bookdown" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Aula 2 Demostrações Contábeis, Impostos e Fluxos de Caixa | Curso Financiamento e Investimento" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+The HTML output format for this example is bookdown::gitbook,
+set in the _output.yml file.</p>" />
+  
+
+<meta name="author" content="Ricardo Machado Ruiz" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="introdução-às-finanças-corporativas.html"/>
+<link rel="next" href="trabalhando-com-demonstrações-contábeis.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.6.1/htmlwidgets.js"></script>
+<link href="libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
+<script src="libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="libs/moment-2.8.4/moment.js"></script>
+<script src="libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+<script src="libs/Dygraph.Plotters.CandlestickPlotter-1.0/candlestick.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Financiamento e Investimento</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Apresentação</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Ementa"><i class="fa fa-check"></i>Ementa</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Programa"><i class="fa fa-check"></i>Programa</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Parte-I"><i class="fa fa-check"></i>Parte I</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Parte-II"><i class="fa fa-check"></i>Parte II</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Parte-III"><i class="fa fa-check"></i>Parte III</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Estratégica-didática-e-avaliação"><i class="fa fa-check"></i>Estratégia didática e avaliação</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Cronograma-de-atividades"><i class="fa fa-check"></i>Cronograma de atividades</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Bibliografia"><i class="fa fa-check"></i>Bibliografia</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Básica"><i class="fa fa-check"></i>Básica</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#Complementar"><i class="fa fa-check"></i>Complementar</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html"><i class="fa fa-check"></i><b>1</b> Introdução às Finanças Corporativas</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#finanças-corporativas-e-o-administrador-financeiro"><i class="fa fa-check"></i><b>1.1</b> Finanças corporativas e o administrador financeiro</a></li>
+<li class="chapter" data-level="1.2" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#decisões-de-administração-financeira"><i class="fa fa-check"></i><b>1.2</b> Decisões de administração financeira</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#orçamento-de-capital"><i class="fa fa-check"></i><b>1.2.1</b> Orçamento de Capital</a></li>
+<li class="chapter" data-level="1.2.2" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#estrutura-de-capital"><i class="fa fa-check"></i><b>1.2.2</b> Estrutura de Capital</a></li>
+<li class="chapter" data-level="1.2.3" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#administração-do-capital-circulante"><i class="fa fa-check"></i><b>1.2.3</b> Administração do Capital Circulante</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#formas-de-organização-de-negócios"><i class="fa fa-check"></i><b>1.3</b> Formas de Organização de Negócios</a></li>
+<li class="chapter" data-level="1.4" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#o-objetivo-da-administração-financeira"><i class="fa fa-check"></i><b>1.4</b> O objetivo da administração financeira</a></li>
+<li class="chapter" data-level="1.5" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#o-problema-de-agência-e-o-controle-da-empresa"><i class="fa fa-check"></i><b>1.5</b> O problema de agência e o controle da empresa</a></li>
+<li class="chapter" data-level="1.6" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#mercados-financeiros-e-a-empresa"><i class="fa fa-check"></i><b>1.6</b> Mercados financeiros e a Empresa</a></li>
+<li class="chapter" data-level="1.7" data-path="introdução-às-finanças-corporativas.html"><a href="introdução-às-finanças-corporativas.html#resumo-e-conclusões"><i class="fa fa-check"></i><b>1.7</b> Resumo e conclusões</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><i class="fa fa-check"></i><b>2</b> Demostrações Contábeis, Impostos e Fluxos de Caixa</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#o-balanço-patrimonial"><i class="fa fa-check"></i><b>2.1</b> O balanço patrimonial</a></li>
+<li class="chapter" data-level="2.2" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#a-demonstração-de-resultados-do-exercício"><i class="fa fa-check"></i><b>2.2</b> A Demonstração de Resultados do Exercício</a></li>
+<li class="chapter" data-level="2.3" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#impostos"><i class="fa fa-check"></i><b>2.3</b> Impostos</a></li>
+<li class="chapter" data-level="2.4" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#fluxo-de-caixa"><i class="fa fa-check"></i><b>2.4</b> Fluxo de Caixa</a></li>
+<li class="chapter" data-level="2.5" data-path="demostrações-contábeis-impostos-e-fluxos-de-caixa.html"><a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#resumo-e-conclusões-1"><i class="fa fa-check"></i><b>2.5</b> Resumo e conclusões</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="trabalhando-com-demonstrações-contábeis.html"><a href="trabalhando-com-demonstrações-contábeis.html"><i class="fa fa-check"></i><b>3</b> Trabalhando com Demonstrações Contábeis</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="trabalhando-com-demonstrações-contábeis.html"><a href="trabalhando-com-demonstrações-contábeis.html#fluxo-de-caixa-e-demonstrações-contábeis-um-exame-detalhado"><i class="fa fa-check"></i><b>3.1</b> Fluxo de caixa e demonstrações contábeis: um exame detalhado</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Curso Financiamento e Investimento</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="demostrações-contábeis-impostos-e-fluxos-de-caixa" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Aula 2</span> Demostrações Contábeis, Impostos e Fluxos de Caixa<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#demostrações-contábeis-impostos-e-fluxos-de-caixa" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-13"></span>
+<p class="caption">
+Figura 2.1: Fluxos de caixa entre a empresa e os mercados financeiros
+</p>
+<img src="Aula02_fig01.jpg" alt="Fluxos de caixa entre a empresa e os mercados financeiros" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp1" role="doc-biblioref">Ross et al. 2013i, pg.19</a>)</span>
+</span>
+<br></p>
+<ul>
+<li>Diferença entre valor contávil e valor de mercado<br />
+</li>
+<li>Diferença entre lucro contábil e fluxo de caixa<br />
+</li>
+<li>Diferença entre as alíquotas tributárias médias e marginais<br />
+</li>
+<li>Determinar o fluxo de caixa de uma empresa a partir de suas demonstrações contábeis</li>
+</ul>
+<div id="o-balanço-patrimonial" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> O balanço patrimonial<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#o-balanço-patrimonial" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li>Balanço Patrimonial;</li>
+<li>Demonstração dos Resultados do Exercício (DRE);</li>
+<li>Demonstração dos Fluxos de Caixa;</li>
+<li>Demonstração do Valor Adicionado;</li>
+<li>Demonstrativos Patrimoniais ou Demonstrativos dos Lucros ou Prejuízos Acumulados;</li>
+</ul>
+<p><strong>Ativos: o lado esquerdo</strong><br />
+Ativo circulante (estoque de matérias-primas e produtos acabados)<br />
+Ativo circulante (contas a receber com prazo inferior a uma)<br />
+Ativo não-circulante (imobilizado, como prédios e máquinas e caminhões)<br />
+Ativo não-circulante (intangível, como uma patente ou marca)</p>
+<p><strong>Passivos e patrimônio líquido (equity): o lado direito</strong><br />
+Passivo circulante (dívidas a serem pagas em um ano)<br />
+Passivo não-circulante (títulos de dívida, empréstimos de longo prazo, +2, +5 anos)<br />
+Patrimônio líquido ou capital próprio (equity)</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-14"></span>
+<p class="caption">
+Figura 2.2: O balanço patrimonial. Lado esquerdo: valor total dos ativos. Lado direito: valor total dos passivos e do patrimônio líquido
+</p>
+<img src="Aula02_fig02.jpg" alt="O balanço patrimonial. Lado esquerdo: valor total dos ativos. Lado direito: valor total dos passivos e do patrimônio líquido" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.25</a>)</span>
+</span>
+<br></p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-15"></span>
+<p class="caption">
+Figura 2.3: Estrutura do Balanço Patrimonial
+</p>
+<img src="Aula02_fig03.jpg" alt="Estrutura do Balanço Patrimonial" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-assaf2014financcascp5" role="doc-biblioref">Assaf Neto 2014g, pg.105</a>)</span>
+</span>
+<br></p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
+<p class="caption">
+Figura 2.4: Estrutura da Demonstração do Resultado do Exercício
+</p>
+<img src="Aula02_fig04.jpg" alt="Estrutura da Demonstração do Resultado do Exercício" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-assaf2014financcascp5" role="doc-biblioref">Assaf Neto 2014g, pg.111</a>)</span>
+</span>
+<br></p>
+<p><strong>Capital circulante líquido</strong></p>
+<p><span class="math display">\[
+\mathrm{capital\;circulante\;líquido = ativo\;circulante - passivo\;circulante}
+\]</span></p>
+<p>Se negativo em um horizonte de um ano, pode-se ter um problema de liquidez, mas não um problema econômico financeiro grave, por exemplo, falência.</p>
+<p>A estrutura de ativos reflete o ramo de negócios, a indústria, os mercados e a estratégia da empresa. Não existe um padrão geral, mas sim condicionado por essa inserção industrial.</p>
+<p><strong>Liquidez</strong></p>
+<p>Velocidade e facilidade com que os ativos podem ser convertidos em caixa.<br />
+Facilidade de Conversão X Perda de Valor.<br />
+Existência de <strong>mercado secundários e ativos não-específicos</strong> aumenta a liquidez.</p>
+<p>Os ativos imobilizados e específicos são os menos-líquidos.<br />
+Quando maior a liquidez, melhor.<br />
+A manutenção de ativos líquidos pode ser custosa ou apresentar menor rendimento.<br />
+Como explicar/justificar?</p>
+<p><strong>Dívida e Patrimônio</strong></p>
+<p><span class="math display">\[
+\mathrm{valor\;residual\;da\;empresa = ativos – passivos}
+\]</span>
+O uso de dívidas na estrutura de capital é chamado de <strong>alavancagem financeira</strong>.<br />
+Quanto maior a dívida, maior a alavancagem financeira.<br />
+</p>
+<p><strong>Suposto geral da alavancagem</strong>: Recursos geridos pela empresa oferecem um retorno superior ao custo do capital obtido com terceiros.</p>
+<p>A alavancagem aumenta a recompensa potencial dos acionistas.<br />
+A alavancagem aumenta a despesa financeira.<br />
+A alavancagem aumenta o risco dos acionistas e de fracasso nos negócios.</p>
+<p><strong>Valor de Mercado X Valor Contábil</strong></p>
+<p>Valores contábeis.<br />
+Custos históricos.<br />
+Valor que a empresa pagou pelos ativos.</p>
+<p>Valor contábil deve ser ajustado ao seu valor recuperável (exemplo: <em>impairment</em>).<br />
+Valor de custo recuperável (venda).<br />
+Valor da empresa é valor de mercado.</p>
+<p>A diferença entre o valor de mercado e o valor contábil é importante para entender o impacto dos lucros e das perdas demonstradas.</p>
+<p>Quando ocorrem <strong>grandes mudanças econômicas</strong>, a administração da empresa deverá realizar o chamado <strong>teste de recuperação de ativos</strong> (<em>impairment</em>) e <strong>ajustar o valor contábil</strong> ao resultado dessa avaliação.</p>
+<p>O <strong>valor líquido da venda</strong> seja o valor a ser obtido em <strong>condições normais de negociação</strong> entre partes conhecedoras e independentes, deduzidas as despesas necessárias para que ocorra a venda.</p>
+<p>O <strong>valor em uso</strong> seja o valor presente de fluxos de caixa futuros estimados, que devem resultar do ativo.</p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Lucro da BHP Billiton cai 37% no ano fiscal de 30/06</strong></p>
+</div>
+<p><span style="font-size: 80%">
+Por <strong>Valor, com Dow Jones Newswires</strong>
+</span></p>
+<p><strong>SÃO PAULO - A BHP Billiton registrou queda anual de 37% do lucro líquido</strong> no ano fiscal de 2018, encerrado em 30 de junho, para US$ 3,71 bilhões. O resultado foi impactado, segundo a empresa, por <strong>uma perda excepcional de US$ 5,2 bilhões, causada principalmente por uma baixa contábil (‘impairment’) de US$ 2,86 bilhões relacionada à venda dos ativos de petróleo e gás onshore nos Estados Unidos e pelo rompimento da barragem da Samarco, uma joint venture da BHP com a brasileira Vale, com 50% cada.</strong></p>
+<p>A perda referente à Samarco corresponde a US$ 650 milhões de 2018.</p>
+<p>O lucro antes de juros, impostos, depreciação e amortização (Ebitda, na sigla em inglês) ajustado apurou um avanço de 20%, para US$ 23,2 bilhões. A receita total teve um crescimento de 20% ante o mesmo período do ano passado, para US$ 45,8 bi.</p>
+<p>A BHP também anunciou o pagamento de dividendo de US$ 0,63 por ação, levando a empresa a um dividendo de US$ 1,18 por ação em todo o ano, um valor superior aos US$ 0,83 de um ano antes.</p>
+<p>A dívida líquida da BHP recuou 33% no ano fiscal de 2018, para US$ 10,9 bilhões.</p>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-valor201808" role="doc-biblioref">Valor 2018</a>)</span>
+</span></p>
+</div>
+<p><br></p>
+<div class="dygraphs html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8d154f64828b562923b8" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-8d154f64828b562923b8">{"x":{"attrs":{"title":"Preço das ações da BHP (Dólares norte-americanos correntes)","labels":["day","BHP.Open","BHP.High","BHP.Low","BHP.Close"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"colors":["#668000","#003380","#008033","black"],"series":{"BHP.Close":{"axis":"y"}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"daily","annotations":[],"shadings":[{"from":"2018-08-20T00:00:00.000Z","to":"2018-08-21T00:00:00.000Z","color":"red","axis":"x"}],"events":[],"format":"date","data":[["2018-01-02T00:00:00.000Z","2018-01-03T00:00:00.000Z","2018-01-04T00:00:00.000Z","2018-01-05T00:00:00.000Z","2018-01-08T00:00:00.000Z","2018-01-09T00:00:00.000Z","2018-01-10T00:00:00.000Z","2018-01-11T00:00:00.000Z","2018-01-12T00:00:00.000Z","2018-01-16T00:00:00.000Z","2018-01-17T00:00:00.000Z","2018-01-18T00:00:00.000Z","2018-01-19T00:00:00.000Z","2018-01-22T00:00:00.000Z","2018-01-23T00:00:00.000Z","2018-01-24T00:00:00.000Z","2018-01-25T00:00:00.000Z","2018-01-26T00:00:00.000Z","2018-01-29T00:00:00.000Z","2018-01-30T00:00:00.000Z","2018-01-31T00:00:00.000Z","2018-02-01T00:00:00.000Z","2018-02-02T00:00:00.000Z","2018-02-05T00:00:00.000Z","2018-02-06T00:00:00.000Z","2018-02-07T00:00:00.000Z","2018-02-08T00:00:00.000Z","2018-02-09T00:00:00.000Z","2018-02-12T00:00:00.000Z","2018-02-13T00:00:00.000Z","2018-02-14T00:00:00.000Z","2018-02-15T00:00:00.000Z","2018-02-16T00:00:00.000Z","2018-02-20T00:00:00.000Z","2018-02-21T00:00:00.000Z","2018-02-22T00:00:00.000Z","2018-02-23T00:00:00.000Z","2018-02-26T00:00:00.000Z","2018-02-27T00:00:00.000Z","2018-02-28T00:00:00.000Z","2018-03-01T00:00:00.000Z","2018-03-02T00:00:00.000Z","2018-03-05T00:00:00.000Z","2018-03-06T00:00:00.000Z","2018-03-07T00:00:00.000Z","2018-03-08T00:00:00.000Z","2018-03-09T00:00:00.000Z","2018-03-12T00:00:00.000Z","2018-03-13T00:00:00.000Z","2018-03-14T00:00:00.000Z","2018-03-15T00:00:00.000Z","2018-03-16T00:00:00.000Z","2018-03-19T00:00:00.000Z","2018-03-20T00:00:00.000Z","2018-03-21T00:00:00.000Z","2018-03-22T00:00:00.000Z","2018-03-23T00:00:00.000Z","2018-03-26T00:00:00.000Z","2018-03-27T00:00:00.000Z","2018-03-28T00:00:00.000Z","2018-03-29T00:00:00.000Z","2018-04-02T00:00:00.000Z","2018-04-03T00:00:00.000Z","2018-04-04T00:00:00.000Z","2018-04-05T00:00:00.000Z","2018-04-06T00:00:00.000Z","2018-04-09T00:00:00.000Z","2018-04-10T00:00:00.000Z","2018-04-11T00:00:00.000Z","2018-04-12T00:00:00.000Z","2018-04-13T00:00:00.000Z","2018-04-16T00:00:00.000Z","2018-04-17T00:00:00.000Z","2018-04-18T00:00:00.000Z","2018-04-19T00:00:00.000Z","2018-04-20T00:00:00.000Z","2018-04-23T00:00:00.000Z","2018-04-24T00:00:00.000Z","2018-04-25T00:00:00.000Z","2018-04-26T00:00:00.000Z","2018-04-27T00:00:00.000Z","2018-04-30T00:00:00.000Z","2018-05-01T00:00:00.000Z","2018-05-02T00:00:00.000Z","2018-05-03T00:00:00.000Z","2018-05-04T00:00:00.000Z","2018-05-07T00:00:00.000Z","2018-05-08T00:00:00.000Z","2018-05-09T00:00:00.000Z","2018-05-10T00:00:00.000Z","2018-05-11T00:00:00.000Z","2018-05-14T00:00:00.000Z","2018-05-15T00:00:00.000Z","2018-05-16T00:00:00.000Z","2018-05-17T00:00:00.000Z","2018-05-18T00:00:00.000Z","2018-05-21T00:00:00.000Z","2018-05-22T00:00:00.000Z","2018-05-23T00:00:00.000Z","2018-05-24T00:00:00.000Z","2018-05-25T00:00:00.000Z","2018-05-29T00:00:00.000Z","2018-05-30T00:00:00.000Z","2018-05-31T00:00:00.000Z","2018-06-01T00:00:00.000Z","2018-06-04T00:00:00.000Z","2018-06-05T00:00:00.000Z","2018-06-06T00:00:00.000Z","2018-06-07T00:00:00.000Z","2018-06-08T00:00:00.000Z","2018-06-11T00:00:00.000Z","2018-06-12T00:00:00.000Z","2018-06-13T00:00:00.000Z","2018-06-14T00:00:00.000Z","2018-06-15T00:00:00.000Z","2018-06-18T00:00:00.000Z","2018-06-19T00:00:00.000Z","2018-06-20T00:00:00.000Z","2018-06-21T00:00:00.000Z","2018-06-22T00:00:00.000Z","2018-06-25T00:00:00.000Z","2018-06-26T00:00:00.000Z","2018-06-27T00:00:00.000Z","2018-06-28T00:00:00.000Z","2018-06-29T00:00:00.000Z","2018-07-02T00:00:00.000Z","2018-07-03T00:00:00.000Z","2018-07-05T00:00:00.000Z","2018-07-06T00:00:00.000Z","2018-07-09T00:00:00.000Z","2018-07-10T00:00:00.000Z","2018-07-11T00:00:00.000Z","2018-07-12T00:00:00.000Z","2018-07-13T00:00:00.000Z","2018-07-16T00:00:00.000Z","2018-07-17T00:00:00.000Z","2018-07-18T00:00:00.000Z","2018-07-19T00:00:00.000Z","2018-07-20T00:00:00.000Z","2018-07-23T00:00:00.000Z","2018-07-24T00:00:00.000Z","2018-07-25T00:00:00.000Z","2018-07-26T00:00:00.000Z","2018-07-27T00:00:00.000Z","2018-07-30T00:00:00.000Z","2018-07-31T00:00:00.000Z","2018-08-01T00:00:00.000Z","2018-08-02T00:00:00.000Z","2018-08-03T00:00:00.000Z","2018-08-06T00:00:00.000Z","2018-08-07T00:00:00.000Z","2018-08-08T00:00:00.000Z","2018-08-09T00:00:00.000Z","2018-08-10T00:00:00.000Z","2018-08-13T00:00:00.000Z","2018-08-14T00:00:00.000Z","2018-08-15T00:00:00.000Z","2018-08-16T00:00:00.000Z","2018-08-17T00:00:00.000Z","2018-08-20T00:00:00.000Z","2018-08-21T00:00:00.000Z","2018-08-22T00:00:00.000Z","2018-08-23T00:00:00.000Z","2018-08-24T00:00:00.000Z","2018-08-27T00:00:00.000Z","2018-08-28T00:00:00.000Z","2018-08-29T00:00:00.000Z","2018-08-30T00:00:00.000Z","2018-08-31T00:00:00.000Z","2018-09-04T00:00:00.000Z","2018-09-05T00:00:00.000Z","2018-09-06T00:00:00.000Z","2018-09-07T00:00:00.000Z","2018-09-10T00:00:00.000Z","2018-09-11T00:00:00.000Z","2018-09-12T00:00:00.000Z","2018-09-13T00:00:00.000Z","2018-09-14T00:00:00.000Z","2018-09-17T00:00:00.000Z","2018-09-18T00:00:00.000Z","2018-09-19T00:00:00.000Z","2018-09-20T00:00:00.000Z","2018-09-21T00:00:00.000Z","2018-09-24T00:00:00.000Z","2018-09-25T00:00:00.000Z","2018-09-26T00:00:00.000Z","2018-09-27T00:00:00.000Z","2018-09-28T00:00:00.000Z","2018-10-01T00:00:00.000Z","2018-10-02T00:00:00.000Z","2018-10-03T00:00:00.000Z","2018-10-04T00:00:00.000Z","2018-10-05T00:00:00.000Z","2018-10-08T00:00:00.000Z","2018-10-09T00:00:00.000Z","2018-10-10T00:00:00.000Z","2018-10-11T00:00:00.000Z","2018-10-12T00:00:00.000Z","2018-10-15T00:00:00.000Z","2018-10-16T00:00:00.000Z","2018-10-17T00:00:00.000Z","2018-10-18T00:00:00.000Z","2018-10-19T00:00:00.000Z","2018-10-22T00:00:00.000Z","2018-10-23T00:00:00.000Z","2018-10-24T00:00:00.000Z","2018-10-25T00:00:00.000Z","2018-10-26T00:00:00.000Z","2018-10-29T00:00:00.000Z","2018-10-30T00:00:00.000Z","2018-10-31T00:00:00.000Z","2018-11-01T00:00:00.000Z","2018-11-02T00:00:00.000Z","2018-11-05T00:00:00.000Z","2018-11-06T00:00:00.000Z","2018-11-07T00:00:00.000Z","2018-11-08T00:00:00.000Z","2018-11-09T00:00:00.000Z","2018-11-12T00:00:00.000Z","2018-11-13T00:00:00.000Z","2018-11-14T00:00:00.000Z","2018-11-15T00:00:00.000Z","2018-11-16T00:00:00.000Z","2018-11-19T00:00:00.000Z","2018-11-20T00:00:00.000Z","2018-11-21T00:00:00.000Z","2018-11-23T00:00:00.000Z","2018-11-26T00:00:00.000Z","2018-11-27T00:00:00.000Z","2018-11-28T00:00:00.000Z","2018-11-29T00:00:00.000Z","2018-11-30T00:00:00.000Z","2018-12-03T00:00:00.000Z","2018-12-04T00:00:00.000Z","2018-12-06T00:00:00.000Z","2018-12-07T00:00:00.000Z","2018-12-10T00:00:00.000Z","2018-12-11T00:00:00.000Z","2018-12-12T00:00:00.000Z","2018-12-13T00:00:00.000Z","2018-12-14T00:00:00.000Z","2018-12-17T00:00:00.000Z","2018-12-18T00:00:00.000Z","2018-12-19T00:00:00.000Z","2018-12-20T00:00:00.000Z","2018-12-21T00:00:00.000Z","2018-12-24T00:00:00.000Z","2018-12-26T00:00:00.000Z","2018-12-27T00:00:00.000Z","2018-12-28T00:00:00.000Z"],[41.703835,42.51561,42.774307,42.694023,43.273865,43.532558,43.639606,44.005352,44.727921,44.469223,44.174843,44.032112,44.308655,44.032112,43.630688,44.174843,44.603031,44.148083,44.834969,43.987511,43.800179,43.49688,43.595005,42.720783,41.123997,41.784122,41.177521,40.499554,41.016949,41.810883,42.007137,44.504906,43.933987,41.909012,41.578945,41.900089,42.738625,43.470116,43.282784,42.033897,40.936665,40.303303,40.231937,41.587868,40.963425,39.892952,40.338982,40.499554,40.883141,40.936665,40.231937,40.356823,40,39.598572,39.848351,39.928635,39.70562,39.839428,40.356823,39.045494,39.420162,39.607494,39.509369,38.67083,39.491524,39.41124,38.768955,40.330063,40.802856,40.918823,41.703835,41.971455,41.552185,42.649422,43.041927,42.818913,42.292595,42.899197,42.185551,42.586975,41.62355,41.59679,41.373772,41.926849,42.194469,42.426407,43.050846,42.542374,43.095451,44.076717,45.218555,45.450493,45.057983,45.869759,45.816235,45.405888,45.771633,46.351471,45.227474,44.933094,44.513828,43.140053,43.532558,44.442463,44.879574,45.102589,44.942017,45.700268,46.119537,46.012489,46.244427,45.664585,45.423729,45.236397,43.969669,43.095451,42.256912,42.80999,42.649422,43.612846,42.711864,42.881355,43.889385,43.800179,44.924175,43.479038,44.397858,43.648529,43.354149,44.843887,45.245316,44.281891,44.058876,43.79126,43.416592,42.863514,43.79126,43.336308,42.622658,43.238178,44.736843,44.317574,44.317574,45.495094,45.539696,46.583408,45.825157,44.157001,44.603031,44.478146,45.709187,45.182873,44.861732,43.621765,43.898304,43.84478,42.355042,42.381802,41.989296,43.238178,42.836754,42.881355,42.622658,42.979485,43.443356,44.53167,44.067799,43.889385,43.211418,42.087421,41.980373,40.722569,39.589653,39.687778,38.626228,39.420162,40.303303,40.749332,40.669044,40.990189,41.882248,43.033005,43.81802,44.130241,44.594112,44.076717,44.272972,44.085636,44.611954,44.879574,45.066906,45.227474,44.13916,43.309544,43.541481,43.389832,42.328278,43.157894,42.756466,43.059769,42.952721,42.024979,41.507584,41.614632,40.900982,40.61552,39.741302,39.000893,40.776093,39.723461,40.909901,42.595898,43.470116,43.541481,43.050846,43.710972,43.5504,42.105263,42.685104,42.04282,41.204281,41.284569,42.239071,42.533451,41.605709,41.427296,40.196255,39.625336,39.241749,39.67886,40.223015,39.41124,41.793041,41.534344,39.446922,40.722569,40.285458,40.981266,41.864407,42.506691,41.578945,42.649422,42.604816,42.943802,42.346119,42.265835,42.140945,41.32917,41.7752,43.10437],[42.399643,42.640499,42.899197,42.952721,43.345226,43.871544,43.764496,44.43354,45.307762,44.861732,44.460304,44.228367,44.522747,44.148083,43.702053,44.40678,44.745762,44.629795,44.85281,44.014275,44.005352,44.049953,43.612846,43.282784,42.78323,42.140945,41.266727,41.03479,41.855488,42.738625,44.290813,44.638714,44.219448,42.016056,42.301517,43.148975,43.086529,43.719894,43.282784,42.22123,41.35593,40.58876,40.829617,41.989296,41.293488,39.901875,40.749332,40.793934,40.945583,40.936665,40.561996,40.71365,40.008923,40,41.043713,39.955399,40.151649,40,40.401428,39.206066,39.830509,39.741302,39.901875,39.598572,39.812668,39.589653,39.295273,41.150757,41.391617,41.364853,41.935772,42.016056,41.703835,43.389832,43.247101,42.845673,42.524532,43.157894,42.301517,42.63158,41.694916,42.033897,41.409454,42.310436,42.65834,43.220341,43.175735,42.542374,43.898304,44.567352,45.486172,45.958965,45.379128,46.235504,46.128456,45.619984,46.146297,46.512043,45.512936,45.44157,44.513828,43.532558,44.290813,44.647636,45.022301,45.227474,45.165031,46.351471,46.538803,46.190903,46.404995,45.8876,45.646744,45.486172,43.996433,43.782337,42.613739,42.872437,42.925961,43.826939,42.792149,43.728813,44.727921,44.665478,45.272079,43.69313,44.424622,43.800179,44.603031,45.504013,45.691345,44.308655,44.308655,43.898304,43.452274,43.612846,44.585194,43.595005,43.282784,43.354149,45.227474,45.138268,44.897411,45.878681,46.074932,46.940231,45.905441,44.620872,45.093666,44.647636,45.807316,45.209633,44.977699,43.987511,44.032112,44.228367,42.417484,42.63158,42.881355,43.309544,42.836754,43.113293,42.711864,43.425514,43.898304,44.674397,44.495987,43.978592,43.389832,42.194469,42.319359,40.749332,39.776985,39.759144,39.38448,39.901875,40.374664,40.829617,40.972347,41.30241,42.435326,43.193577,44.049953,44.335415,44.834969,44.620872,44.451382,44.665478,45.209633,45.29884,45.200714,45.352364,44.13916,43.889385,44.281891,43.39875,43.015163,43.202499,43.238178,43.309544,42.961639,42.194469,41.935772,42.158787,41.30241,40.749332,40.062443,39.955399,40.785011,40.463871,41.516502,43.380909,43.719894,43.728813,43.193577,43.800179,43.728813,42.194469,42.711864,42.310436,41.48082,42.167706,42.801071,42.720783,41.730598,41.926849,40.267616,39.919716,39.41124,40.624443,40.428188,39.634254,41.989296,41.971455,40.044601,40.999107,40.44603,41.18644,42.06958,42.613739,41.694916,42.979485,42.979485,43.461197,42.417484,43.10437,42.444244,43.10437,42.78323,43.122211],[41.587868,42.176628,42.578056,42.479931,43.131134,43.39875,43.470116,43.942909,44.656555,43.782337,43.880463,43.639606,44.165924,43.853703,43.148975,43.889385,43.577164,44.032112,44.049953,43.487957,43.443356,43.470116,42.578056,41.30241,41.043713,41.213203,39.901875,39.313114,41.00803,41.730598,41.944691,43.862621,43.10437,41.347012,41.284569,41.900089,42.604816,43.050846,42.381802,41.462978,40.401428,39.723461,40,41.45406,40.240856,39.429081,40.142731,40.258698,39.901875,40.115967,40.133808,40.240856,39.018734,39.348797,39.821587,39.063335,39.206066,39.348797,39.161465,38.67083,39.170383,38.786797,39.116859,38.563782,39.41124,38.715431,38.447815,40.330063,40.722569,40.749332,41.605709,41.052631,41.391617,42.640499,42.444244,42.435326,42.024979,42.114185,41.784122,42.096344,41.32917,41.552185,40.758251,41.801964,41.801964,42.292595,42.542374,42.016056,43.041927,43.925068,44.933094,45.450493,44.799286,45.851917,45.584301,45.084747,45.709187,45.584301,44.790367,44.736843,43.612846,42.774307,43.37199,44.183765,44.647636,44.719002,44.879574,45.700268,45.985725,45.842999,46.030331,45.388046,45.120426,44.879574,43.113293,42.997326,42.016056,42.328278,42.506691,43.229259,42.230152,42.738625,43.853703,43.66637,44.53167,43.050846,43.37199,43.273865,43.25602,44.745762,45.182873,43.479038,43.746655,43.425514,42.881355,42.792149,43.69313,42.970562,42.604816,42.80999,44.70116,44.219448,44.228367,45.129349,45.504013,46.47636,45.388046,43.978592,44.487064,44.272972,45.022301,44.478146,44.576271,43.577164,43.327385,43.66637,41.32917,42.114185,41.873325,42.925961,42.140945,42.711864,42.194469,42.890278,43.39875,43.960751,43.969669,43.264942,42.711864,41.7752,41.668152,39.839428,39.268509,39.081177,38.528099,39.339874,39.919716,40.428188,40.276539,40.874218,41.855488,42.881355,43.639606,43.746655,44.540588,43.969669,44.014275,44.041035,44.272972,44.817127,44.585194,44.451382,43.39875,43.113293,43.282784,42.479931,42.016056,42.185551,42.604816,42.970562,42.212311,41.311329,41.32917,41.382694,40.231937,39.268509,39.55397,38.99197,39.107941,39.58073,40.802856,42.319359,42.676182,42.943802,42.65834,43.211418,42.845673,41.685993,42.051739,41.48082,40.936665,40.972347,42.167706,42.310436,40.820698,41.400536,39.393398,39.339874,38.93845,39.036575,39.839428,39.170383,41.320251,40.838535,39.179302,39.696697,39.500446,40.490631,41.507584,42.078503,41.070473,41.784122,42.087421,41.891171,41.373772,41.837646,41.18644,41.00803,41.730598,42.595898],[42.390724,42.560215,42.640499,42.943802,43.264942,43.568241,43.595005,44.308655,45.218555,43.898304,44.103477,44.005352,44.290813,44.103477,43.487957,44.299732,43.630688,44.603031,44.13916,43.630688,43.728813,43.987511,42.667259,41.45406,42.578056,41.391617,39.928635,40.820698,41.74844,42.586975,43.960751,44.522747,43.434433,41.525425,41.45406,42.462086,43.086529,43.586082,42.63158,41.48082,40.785011,40.526318,40.767174,41.632469,40.945583,39.875111,40.392506,40.553078,39.964317,40.285458,40.330063,40.517395,39.438004,39.848351,40.874218,39.25959,39.250668,39.982159,39.339874,38.795719,39.634254,38.96521,39.375557,39.571812,39.67886,38.929527,38.920609,40.847458,41.132915,41.231045,41.74844,41.284569,41.632469,42.934879,42.595898,42.551292,42.149864,42.435326,42.149864,42.292595,41.507584,41.703835,41.30241,41.882248,42.506691,43.059769,42.685104,42.453167,43.84478,44.495987,44.968777,45.664585,45.200714,45.914364,45.834076,45.325603,45.932201,45.619984,45.486172,45.388046,43.728813,42.943802,44.094559,44.40678,44.817127,44.772526,45.102589,46.342552,46.173061,46.092773,46.235504,45.619984,45.218555,44.924175,43.443356,43.684212,42.497768,42.613739,42.711864,43.648529,42.497768,43.559322,43.987511,44.620872,44.611954,43.327385,43.452274,43.434433,44.228367,45.343445,45.655666,43.684212,44.290813,43.81802,43.247101,43.470116,44.460304,43.238178,43.247101,43.024086,44.727921,45.111507,44.647636,45.280998,45.762711,46.619091,45.691345,44.567352,44.942017,44.43354,45.111507,44.879574,44.727921,43.880463,43.380909,44.014275,41.891171,42.167706,42.747547,43.095451,42.319359,42.997326,42.22123,43.229259,43.737736,43.996433,44.40678,43.434433,42.854595,42.140945,41.784122,40.214096,39.625336,39.125782,39.375557,39.857269,40.223015,40.561996,40.347904,41.204281,42.212311,43.059769,43.907227,43.880463,44.585194,44.237289,44.192684,44.460304,44.986618,45.022301,44.674397,44.611954,43.871544,43.773418,43.907227,42.497768,42.542374,42.649422,42.899197,43.247101,42.63158,41.400536,41.561108,42.007137,41.159679,39.28635,39.723461,39.750221,39.509369,40.428188,41.195362,43.264942,42.872437,43.175735,42.881355,43.657448,42.961639,42.060661,42.060661,41.650311,41.364853,42.033897,42.63158,42.435326,41.03479,41.59679,39.937557,39.67886,39.375557,40.624443,40.124889,39.571812,41.48082,40.927742,40.02676,39.768063,40.053524,40.954506,41.578945,42.542374,41.177521,41.917931,42.301517,42.051739,41.721676,42.016056,41.239964,43.086529,42.774307,42.747547]],"plotter":"CandlestickPlotter"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">Yahoo Finance (<a href="#ref-yahoo" role="doc-biblioref">2023</a>)</span>.
+</span></p>
+<p><br>
+<br></p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Gafisa reduz prejuízo em 20% no 4º trimestre de 2018</strong></p>
+</div>
+<p><span style="font-size: 80%">
+Por <strong>Chiara Quintão</strong>
+</span></p>
+<p><strong>SÃO PAULO</strong> - A Gafisa reduziu seu prejuízo líquido em 20%, no quarto trimestre de 2018, para R$ 297 milhões. A receita líquida cresceu 44%, para R$ 192,9 milhões. A margem bruta ficou negativa em 15,4% no quarto trimestre.</p>
+<p><strong>O resultado teve impacto negativo de R$ 276 milhões de “impairments” (baixas contábeis) em valores de terrenos e estoques, de ágio de remensuração de investimentos na Alphaville Urbanismo e reversão de provisões, entre outros ajustes.</strong></p>
+<p>A Gafisa registrou outras despesas operacionais no valor de R$ 251,4 milhões, com alta de 67% ante o quarto trimestre de 2017. Do total, <strong>R$ 112,8 milhões resultaram de “impairment” do ágio da remensuração da parcela do investimento de 30% em Alphaville</strong> e R$ 127,7 milhões, de despesas com demandas judiciais. Essas despesas cresceram 175%.</p>
+<p>No fechamento do ano passado, a Gafisa tinha dívida total de R$ 889,4 milhões. A alavancagem medida por dívida líquida sobre patrimônio líquido ficou em 153%.</p>
+<p>O endividamento foi impactado pelo prejuízo e pelas baixas contábeis, de acordo com a Gafisa. A companhia está avaliando opções para readequar sua estrutura de capital.</p>
+<p>A Gafisa gerou caixa de R$ 13,7 milhões no quarto trimestre de 2018. Segundo a companhia, isso resultou do maior controle de gastos no período.</p>
+<p><strong>Alphaville Urbanismo</strong></p>
+<p>A Alphaville Urbanismo, loteadora da qual a Gafisa possui 30% de participação, reduziu seu prejuízo líquido em 37% no quarto trimestre, na comparação anual, para R$ 222 milhões. A receita líquida teve queda de 29%, para R$ 32 milhões.
+A Gafisa informou que descontinuou o reconhecimento de sua participação em perdas futuras de Alphaville após reduzir a zero o saldo contábil de seus 30% no capital da empresa de urbanismo.</p>
+</div>
+<p><br></p>
+<div class="dygraphs html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-fee893075940e6e8b9e2" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-fee893075940e6e8b9e2">{"x":{"attrs":{"title":"Preço das ações da Gafisa (Reais correntes)","labels":["day","GFSA3.SA.Open","GFSA3.SA.High","GFSA3.SA.Low","GFSA3.SA.Close"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"colors":["#668000","#003380","#008033","black"],"series":{"GFSA3.SA.Close":{"axis":"y"}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"daily","annotations":[],"shadings":[{"from":"2019-03-27T00:00:00.000Z","to":"2019-03-28T00:00:00.000Z","color":"red","axis":"x"}],"events":[],"format":"date","data":[["2019-01-02T00:00:00.000Z","2019-01-03T00:00:00.000Z","2019-01-04T00:00:00.000Z","2019-01-07T00:00:00.000Z","2019-01-08T00:00:00.000Z","2019-01-09T00:00:00.000Z","2019-01-10T00:00:00.000Z","2019-01-11T00:00:00.000Z","2019-01-14T00:00:00.000Z","2019-01-15T00:00:00.000Z","2019-01-16T00:00:00.000Z","2019-01-17T00:00:00.000Z","2019-01-18T00:00:00.000Z","2019-01-21T00:00:00.000Z","2019-01-22T00:00:00.000Z","2019-01-23T00:00:00.000Z","2019-01-24T00:00:00.000Z","2019-01-28T00:00:00.000Z","2019-01-29T00:00:00.000Z","2019-01-30T00:00:00.000Z","2019-01-31T00:00:00.000Z","2019-02-01T00:00:00.000Z","2019-02-04T00:00:00.000Z","2019-02-05T00:00:00.000Z","2019-02-06T00:00:00.000Z","2019-02-07T00:00:00.000Z","2019-02-08T00:00:00.000Z","2019-02-11T00:00:00.000Z","2019-02-12T00:00:00.000Z","2019-02-13T00:00:00.000Z","2019-02-14T00:00:00.000Z","2019-02-15T00:00:00.000Z","2019-02-18T00:00:00.000Z","2019-02-19T00:00:00.000Z","2019-02-20T00:00:00.000Z","2019-02-21T00:00:00.000Z","2019-02-22T00:00:00.000Z","2019-02-25T00:00:00.000Z","2019-02-26T00:00:00.000Z","2019-02-27T00:00:00.000Z","2019-02-28T00:00:00.000Z","2019-03-01T00:00:00.000Z","2019-03-06T00:00:00.000Z","2019-03-07T00:00:00.000Z","2019-03-08T00:00:00.000Z","2019-03-11T00:00:00.000Z","2019-03-12T00:00:00.000Z","2019-03-13T00:00:00.000Z","2019-03-14T00:00:00.000Z","2019-03-15T00:00:00.000Z","2019-03-18T00:00:00.000Z","2019-03-19T00:00:00.000Z","2019-03-20T00:00:00.000Z","2019-03-21T00:00:00.000Z","2019-03-22T00:00:00.000Z","2019-03-25T00:00:00.000Z","2019-03-26T00:00:00.000Z","2019-03-27T00:00:00.000Z","2019-03-28T00:00:00.000Z","2019-03-29T00:00:00.000Z","2019-04-01T00:00:00.000Z","2019-04-02T00:00:00.000Z","2019-04-03T00:00:00.000Z","2019-04-04T00:00:00.000Z","2019-04-05T00:00:00.000Z","2019-04-08T00:00:00.000Z","2019-04-09T00:00:00.000Z","2019-04-10T00:00:00.000Z","2019-04-11T00:00:00.000Z","2019-04-12T00:00:00.000Z","2019-04-15T00:00:00.000Z","2019-04-16T00:00:00.000Z","2019-04-17T00:00:00.000Z","2019-04-18T00:00:00.000Z","2019-04-22T00:00:00.000Z","2019-04-23T00:00:00.000Z","2019-04-24T00:00:00.000Z","2019-04-25T00:00:00.000Z","2019-04-26T00:00:00.000Z","2019-04-29T00:00:00.000Z","2019-04-30T00:00:00.000Z","2019-05-02T00:00:00.000Z","2019-05-03T00:00:00.000Z","2019-05-06T00:00:00.000Z","2019-05-07T00:00:00.000Z","2019-05-08T00:00:00.000Z","2019-05-09T00:00:00.000Z","2019-05-10T00:00:00.000Z","2019-05-13T00:00:00.000Z","2019-05-14T00:00:00.000Z","2019-05-15T00:00:00.000Z","2019-05-16T00:00:00.000Z","2019-05-17T00:00:00.000Z","2019-05-20T00:00:00.000Z","2019-05-21T00:00:00.000Z","2019-05-22T00:00:00.000Z","2019-05-23T00:00:00.000Z","2019-05-24T00:00:00.000Z","2019-05-27T00:00:00.000Z","2019-05-28T00:00:00.000Z","2019-05-29T00:00:00.000Z","2019-05-30T00:00:00.000Z","2019-05-31T00:00:00.000Z","2019-06-03T00:00:00.000Z","2019-06-04T00:00:00.000Z","2019-06-05T00:00:00.000Z","2019-06-06T00:00:00.000Z","2019-06-07T00:00:00.000Z","2019-06-10T00:00:00.000Z","2019-06-11T00:00:00.000Z","2019-06-12T00:00:00.000Z","2019-06-13T00:00:00.000Z","2019-06-14T00:00:00.000Z","2019-06-17T00:00:00.000Z","2019-06-18T00:00:00.000Z","2019-06-19T00:00:00.000Z","2019-06-21T00:00:00.000Z","2019-06-24T00:00:00.000Z","2019-06-25T00:00:00.000Z","2019-06-26T00:00:00.000Z","2019-06-27T00:00:00.000Z","2019-06-28T00:00:00.000Z","2019-07-01T00:00:00.000Z","2019-07-02T00:00:00.000Z","2019-07-03T00:00:00.000Z","2019-07-04T00:00:00.000Z","2019-07-05T00:00:00.000Z","2019-07-08T00:00:00.000Z","2019-07-10T00:00:00.000Z","2019-07-11T00:00:00.000Z","2019-07-12T00:00:00.000Z","2019-07-15T00:00:00.000Z","2019-07-16T00:00:00.000Z","2019-07-17T00:00:00.000Z","2019-07-18T00:00:00.000Z","2019-07-19T00:00:00.000Z","2019-07-22T00:00:00.000Z","2019-07-23T00:00:00.000Z","2019-07-24T00:00:00.000Z","2019-07-25T00:00:00.000Z","2019-07-26T00:00:00.000Z","2019-07-29T00:00:00.000Z","2019-07-30T00:00:00.000Z","2019-07-31T00:00:00.000Z","2019-08-01T00:00:00.000Z","2019-08-02T00:00:00.000Z","2019-08-05T00:00:00.000Z","2019-08-06T00:00:00.000Z","2019-08-07T00:00:00.000Z","2019-08-08T00:00:00.000Z","2019-08-09T00:00:00.000Z","2019-08-12T00:00:00.000Z","2019-08-13T00:00:00.000Z","2019-08-14T00:00:00.000Z","2019-08-15T00:00:00.000Z","2019-08-16T00:00:00.000Z","2019-08-19T00:00:00.000Z","2019-08-20T00:00:00.000Z","2019-08-21T00:00:00.000Z","2019-08-22T00:00:00.000Z","2019-08-23T00:00:00.000Z","2019-08-26T00:00:00.000Z","2019-08-27T00:00:00.000Z","2019-08-28T00:00:00.000Z","2019-08-29T00:00:00.000Z","2019-08-30T00:00:00.000Z","2019-09-02T00:00:00.000Z","2019-09-03T00:00:00.000Z","2019-09-04T00:00:00.000Z","2019-09-05T00:00:00.000Z","2019-09-06T00:00:00.000Z","2019-09-09T00:00:00.000Z","2019-09-10T00:00:00.000Z","2019-09-11T00:00:00.000Z","2019-09-12T00:00:00.000Z","2019-09-13T00:00:00.000Z","2019-09-16T00:00:00.000Z","2019-09-17T00:00:00.000Z","2019-09-18T00:00:00.000Z","2019-09-19T00:00:00.000Z","2019-09-20T00:00:00.000Z","2019-09-23T00:00:00.000Z","2019-09-24T00:00:00.000Z","2019-09-25T00:00:00.000Z","2019-09-26T00:00:00.000Z","2019-09-27T00:00:00.000Z","2019-09-30T00:00:00.000Z","2019-10-01T00:00:00.000Z","2019-10-02T00:00:00.000Z","2019-10-03T00:00:00.000Z","2019-10-04T00:00:00.000Z","2019-10-07T00:00:00.000Z","2019-10-08T00:00:00.000Z","2019-10-09T00:00:00.000Z","2019-10-10T00:00:00.000Z","2019-10-11T00:00:00.000Z","2019-10-14T00:00:00.000Z","2019-10-15T00:00:00.000Z","2019-10-16T00:00:00.000Z","2019-10-17T00:00:00.000Z","2019-10-18T00:00:00.000Z","2019-10-21T00:00:00.000Z","2019-10-22T00:00:00.000Z","2019-10-23T00:00:00.000Z","2019-10-24T00:00:00.000Z","2019-10-25T00:00:00.000Z","2019-10-28T00:00:00.000Z","2019-10-29T00:00:00.000Z","2019-10-30T00:00:00.000Z","2019-10-31T00:00:00.000Z","2019-11-01T00:00:00.000Z","2019-11-04T00:00:00.000Z","2019-11-05T00:00:00.000Z","2019-11-06T00:00:00.000Z","2019-11-07T00:00:00.000Z","2019-11-08T00:00:00.000Z","2019-11-11T00:00:00.000Z","2019-11-12T00:00:00.000Z","2019-11-13T00:00:00.000Z","2019-11-14T00:00:00.000Z","2019-11-18T00:00:00.000Z","2019-11-19T00:00:00.000Z","2019-11-21T00:00:00.000Z","2019-11-22T00:00:00.000Z","2019-11-25T00:00:00.000Z","2019-11-26T00:00:00.000Z","2019-11-27T00:00:00.000Z","2019-11-28T00:00:00.000Z","2019-11-29T00:00:00.000Z","2019-12-02T00:00:00.000Z","2019-12-03T00:00:00.000Z","2019-12-04T00:00:00.000Z","2019-12-05T00:00:00.000Z","2019-12-06T00:00:00.000Z","2019-12-09T00:00:00.000Z","2019-12-10T00:00:00.000Z","2019-12-11T00:00:00.000Z","2019-12-12T00:00:00.000Z","2019-12-13T00:00:00.000Z","2019-12-16T00:00:00.000Z","2019-12-17T00:00:00.000Z","2019-12-18T00:00:00.000Z","2019-12-19T00:00:00.000Z","2019-12-20T00:00:00.000Z","2019-12-23T00:00:00.000Z","2019-12-26T00:00:00.000Z","2019-12-27T00:00:00.000Z","2019-12-30T00:00:00.000Z"],[123.829987,123.903351,124.63694,122.582886,123.169762,121.629219,119.941963,118.621498,120.308762,120.308762,118.988297,118.694862,115.907219,117.741196,115.17363,112.019188,117.374397,114.440041,112.459343,107.104141,100.648544,105.416878,106.95742,104.169777,101.602211,95.660133,94.046234,88.104156,89.644699,85.463234,78.274048,71.158226,72.625404,70.791435,68.297226,65.803024,67.123482,72.33197,75.119614,74.239304,71.891815,72.625404,71.891815,71.891815,70.791435,70.131203,67.636993,67.710358,67.857071,65.876381,67.123482,74.82618,71.525024,72.111893,68.957458,68.59066,67.857071,67.563637,65.72966,65.289513,63.088737,60.301098,61.621559,59.127354,57.073299,55.386044,59.053993,56.266354,56.706505,57.073299,57.953609,53.185272,53.625427,49.884117,47.609989,49.297249,52.046673,50.420212,49.525661,47.980526,50.176243,47.167297,45.622162,44.808929,45.378193,45.134224,45.459515,44.890255,44.808929,44.158348,43.995701,41.881306,42.287922,41.474689,42.125275,41.962627,42.938503,40.90543,39.848232,40.254848,40.742786,40.173527,40.417492,39.604263,38.872356,42.694534,42.369244,42.287922,43.914379,43.101151,43.019829,42.77586,43.101151,43.995701,45.134224,44.158348,44.320995,44.646286,55.706203,53.022549,49.688309,48.793755,51.965347,51.314766,50.013599,51.396088,51.152119,50.989475,56.682079,58.064568,57.332661,55.136944,56.275463,58.064568,58.715153,57.57663,56.356789,54.486359,54.323715,55.218266,54.649006,56.031494,54.649006,53.67313,53.347839,52.534611,51.721378,50.176243,52.290642,51.721378,53.185192,51.640057,50.501537,49.200371,47.817879,45.540836,47.980526,45.622162,46.842003,46.028774,44.320995,43.507767,41.799984,41.474689,43.914379,44.890255,45.540836,46.679359,47.411266,47.167297,46.760681,46.1101,46.354069,48.956402,47.980526,48.631107,47.8992,48.224495,49.850952,53.510483,51.965347,52.453285,50.664181,47.980526,49.525661,48.793755,48.712433,48.549786,46.516712,44.808929,45.540836,46.028774,45.947453,45.622162,45.947453,46.760681,46.760681,48.387138,46.842003,46.354069,48.061848,48.143169,47.00465,50.33889,48.387138,47.167297,47.411266,47.00465,46.679359,45.378193,44.727608,45.540836,45.540836,47.00465,47.411266,48.793755,49.037724,52.534611,53.510483,53.998421,55.380913,52.859901,53.67313,51.965347,50.501537,52.046673,50.989475,51.314766,52.859901,51.23344,50.745506,49.200371,49.119045,48.387138,50.582859,51.23344,53.835777,52.697254,58.064568,64.733047,66.847443,60.992191,62.618652,60.422932,60.992191,66.034218,71.564171,71.564171],[124.343506,124.783653,124.710297,123.829987,123.243118,123.243118,120.162041,120.968987,121.77594,120.822273,119.721886,118.768219,117.741196,118.694862,115.17363,118.328064,118.694862,114.513397,112.459343,107.104141,104.243134,107.397575,106.95742,104.463211,101.602211,96.100288,94.046234,96.907234,90.818443,85.463234,78.274048,74.019226,72.992203,71.598381,68.370583,68.517303,72.33197,75.70649,77.393745,74.386024,73.359001,73.725792,72.185257,72.405334,71.378304,70.791435,68.370583,69.030815,68.150513,66.60997,73.725792,75.70649,75.19297,72.405334,69.104179,70.057846,68.443947,67.930435,66.756691,65.436226,64.115768,62.795303,62.355148,59.420788,57.513454,60.741253,59.053993,57.440098,58.320404,61.254765,58.173687,57.22002,53.918865,50.470989,49.297249,50.54435,53.10387,50.989475,49.606983,49.76963,50.420212,47.167297,47.00465,46.679359,45.703484,45.866131,46.028774,45.540836,45.134224,44.890255,44.320995,42.287922,42.287922,42.125275,42.450565,45.134224,43.507767,41.393368,41.149399,41.474689,41.312046,40.90543,40.498817,40.092201,46.598038,45.215546,42.694534,44.158348,46.191422,43.751732,44.320995,44.158348,44.971577,46.191422,45.540836,45.052898,44.890255,53.917099,58.145889,54.811649,50.664181,52.453285,53.022549,52.453285,52.209316,52.859901,51.802704,55.868851,60.829548,58.959122,58.064568,57.739277,58.064568,59.365734,58.796474,57.57663,57.57663,56.43811,55.462234,55.950172,58.145889,56.519432,55.136944,54.079746,54.730328,53.347839,51.721378,52.697254,52.290642,54.486359,54.079746,51.721378,51.152119,50.33889,48.387138,47.980526,47.980526,46.354069,47.655235,46.842003,44.971577,43.833057,42.287922,43.751732,45.866131,45.784805,49.525661,47.655235,47.8992,47.980526,47.00465,46.923328,49.119045,50.420212,48.793755,49.037724,49.037724,50.257568,53.429161,54.730328,52.859901,52.697254,51.23344,49.200371,50.013599,49.606983,49.44434,48.712433,46.760681,46.760681,46.354069,47.248619,46.516712,46.516712,46.842003,47.085972,48.143169,48.712433,47.167297,48.061848,48.549786,48.143169,50.013599,50.826828,48.875076,47.57391,47.817879,47.248619,46.923328,46.516712,45.296867,46.43539,47.411266,47.57391,49.037724,51.152119,52.371964,53.917099,53.998421,55.380913,56.031494,53.998421,54.486359,52.615932,52.453285,52.209316,52.615932,53.266518,53.185192,51.314766,50.989475,50.257568,49.281693,51.070797,53.185192,53.67313,54.486359,57.739277,64.24511,68.311256,67.416702,64.814369,63.513203,63.350559,65.54628,71.157562,72.540047,74.57312],[121.042351,122.289452,120.235397,120.748909,120.602196,120.01532,117.521118,118.474785,118.548141,116.494087,116.934242,114.440041,109.378265,113.779808,111.652397,110.772087,114.513397,110.258575,106.737343,100.501831,96.907234,104.316498,102.189087,101.23542,95.440056,91.698746,90.8918,81.061691,84.069412,79.081001,66.976768,70.057846,69.837769,67.930435,65.436226,64.482559,66.536613,71.525024,72.185257,70.864792,70.277924,71.745102,69.837769,70.864792,70.057846,66.389893,67.050125,67.49028,65.656303,65.289513,67.123482,70.791435,70.938148,68.664024,67.123482,67.196846,66.536613,65.436226,65.509583,62.355148,60.154381,58.760559,58.980637,56.779865,55.092609,53.845505,55.752838,55.459404,55.532761,57.073299,54.799171,50.984505,51.057861,47.389912,45.996094,49.003811,49.688309,49.037724,47.736557,46.191422,46.842003,45.215546,44.320995,44.646286,44.808929,44.971577,44.646286,44.890255,44.077026,43.914379,41.881306,41.312046,41.149399,41.474689,41.718658,41.799984,40.498817,39.116325,39.685589,40.254848,39.929558,40.092201,39.360294,37.815159,38.384418,41.149399,41.149399,40.90543,42.694534,42.043953,42.206596,42.206596,42.450565,43.589088,43.589088,43.507767,43.751732,44.23967,51.558735,49.200371,47.411266,48.061848,50.826828,49.44434,49.281693,50.664181,50.176243,50.501537,55.543556,55.950172,54.079746,54.811649,55.462234,57.088692,57.332661,55.950172,53.429161,54.405037,54.24239,52.453285,53.754452,54.24239,53.10387,51.884026,52.371964,51.152119,49.281693,48.956402,50.33889,51.314766,50.989475,50.094921,49.363014,47.00465,44.23967,44.808929,45.378193,43.182472,45.622162,44.320995,42.450565,40.742786,40.092201,41.149399,43.263798,43.995701,45.134224,45.866131,46.43539,46.598038,45.703484,45.703484,46.028774,47.167297,47.492588,47.167297,46.191422,47.655235,48.956402,52.046673,50.501537,50.826828,48.061848,47.167297,48.631107,48.305817,47.817879,46.598038,43.833057,43.751732,45.540836,45.622162,45.134224,45.459515,45.784805,45.947453,46.354069,46.760681,46.1101,46.028774,47.167297,46.1101,46.598038,48.061848,46.923328,46.598038,46.679359,45.947453,45.296867,44.23967,44.320995,44.564964,45.540836,46.272743,47.085972,48.224495,48.793755,50.745506,52.046673,53.429161,52.290642,51.640057,51.314766,50.420212,49.850952,50.176243,50.501537,50.90815,51.070797,50.420212,47.167297,48.793755,47.980526,48.387138,50.257568,50.745506,52.127995,52.290642,57.57663,63.350559,60.178963,59.691029,60.260288,58.633827,60.992191,66.034218,68.880516,70.34433],[124.343506,124.270142,123.683273,122.509529,121.555862,120.01532,118.621498,120.308762,119.501808,118.91494,117.667831,115.17363,117.594475,114.146599,112.67942,117.594475,114.513397,110.918808,107.324219,101.015343,103.436188,106.297188,103.069389,102.115723,95.440056,94.486389,90.8918,89.644699,84.876358,79.081001,68.957458,70.497993,70.791435,68.297226,65.582947,66.389893,70.864792,74.606102,73.359001,71.525024,72.038536,71.745102,71.891815,71.158226,70.204559,67.636993,68.003792,67.49028,65.72966,66.023102,73.579079,71.304947,71.598381,69.911125,68.370583,67.196846,67.783714,65.72966,65.72966,62.648586,60.154381,61.548199,59.053993,56.926582,55.092609,58.540482,55.752838,56.119633,57.880249,57.366737,54.799171,54.579094,51.057861,47.609989,48.783733,50.177555,50.90815,49.200371,47.817879,49.76963,47.00465,45.540836,45.947453,44.971577,45.052898,45.459515,44.971577,45.134224,44.320995,43.995701,41.881306,41.881306,41.474689,41.718658,41.881306,43.101151,40.824108,39.522942,40.417492,40.661461,40.173527,40.417492,39.604263,38.791035,42.694534,42.287922,41.881306,43.995701,42.857182,42.938503,42.613213,43.019829,43.426441,44.727608,43.995701,44.077026,44.158348,53.67313,52.127995,49.606983,48.061848,50.745506,51.23344,50.176243,50.176243,50.90815,50.420212,55.299587,57.57663,56.682079,54.649006,55.543556,57.657951,57.983246,57.57663,56.844723,54.323715,54.405037,54.974297,54.323715,56.031494,54.24239,53.185192,52.453285,52.371964,51.884026,49.525661,52.534611,51.152119,53.185192,51.640057,50.420212,49.363014,47.167297,44.320995,46.598038,46.1101,46.354069,45.784805,45.296867,43.182472,41.474689,41.718658,43.182472,44.483639,45.459515,46.516712,46.760681,47.167297,46.679359,45.703484,46.1101,48.305817,47.167297,48.305817,47.411266,47.980526,49.688309,53.022549,52.046673,52.859901,50.826828,48.224495,49.037724,48.956402,48.712433,48.305817,47.00465,44.402317,45.459515,46.028774,45.947453,45.296867,46.191422,46.191422,46.679359,48.143169,46.760681,46.272743,48.061848,47.655235,46.354069,50.013599,48.061848,46.923328,47.00465,46.760681,46.598038,45.622162,44.23967,45.134224,45.703484,46.598038,47.411266,48.387138,48.875076,52.371964,53.917099,53.591808,55.136944,52.290642,53.429161,51.558735,50.420212,51.965347,50.826828,51.314766,52.697254,51.477409,50.420212,49.363014,48.875076,48.143169,50.176243,51.314766,53.510483,52.127995,57.739277,63.513203,64.24511,61.398808,62.618652,60.260288,61.073517,65.464951,68.555222,69.77507,70.506973]],"plotter":"CandlestickPlotter"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">Yahoo Finance (<a href="#ref-yahoo" role="doc-biblioref">2023</a>)</span>.
+</span></p>
+<p><br>
+<br></p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Vale tem perda bilionária com níquel e carvão</strong></p>
+</div>
+<p><span style="font-size: 80%">
+Por <strong>Valor</strong><br />
+<strong>21/02/2020 08h48</strong>
+</span></p>
+<p>A Vale fechou o quarto trimestre de 2019 com prejuízo de R$ 6,41 bilhões (US$ 1,56 bilhão), comparado ao lucro de R$ 14,49 bilhões (US$ 3,79 bilhões) de igual período do ano passado. Entre os analistas ouvidos pelo Valor, a estimativa mais conservadora era de um prejuízo de US$ 576 milhões.</p>
+<p>No balanço que fecha o ano de 2019, a mineradora <strong>registrou uma baixa contábil de US$ 4,2 bilhões, dos quais US$ 2,5 bilhões relativos às operações de níquel na Vale Nova Caledônia (VNC) e outros US$ 1,69 bilhões relacionados às operações de carvão na mina de Moatize, em Moçambique.</strong> No total, em moeda local, foram R$ 19,43 bilhões da chamada “redução ao valor recuperável”, ou “impairment”.</p>
+<p>A empresa havia informado em dezembro que faria no quarto trimestre uma baixa contábil de valor inferior para essas operações, de US$ 3,2 bilhões. <strong>Houve ainda uma provisão de US$ 671 milhões relacionada ao plano de descaracterização de barragens e outra provisão de US$ 227 milhões relacionada aos acordos firmados pelo rompimento da barragem em Brumadinho.</strong></p>
+<p><strong>Em reais, foram R$ 4,69 bilhões registrados na rubrica “Evento de Brumadinho” nas demonstrações de resultado.</strong> A companhia informou ainda que recebeu o relatório final do Comitê Independente que investigou o rompimento da barragem localizada em Brumadinho (MG), ocorrida no ano passado.</p>
+</div>
+<p><br></p>
+<div class="dygraphs html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-35749532110defda66cb" style="width:100%;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-35749532110defda66cb">{"x":{"attrs":{"title":"Preço das ações da Vale (Reais correntes)","labels":["day","VALE3.SA.Open","VALE3.SA.High","VALE3.SA.Low","VALE3.SA.Close"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"colors":["#668000","#003380","#008033","black"],"series":{"VALE3.SA.Close":{"axis":"y"}},"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"daily","annotations":[],"shadings":[{"from":"2019-01-24T00:00:00.000Z","to":"2019-01-25T00:00:00.000Z","color":"red","axis":"x"},{"from":"2020-02-20T00:00:00.000Z","to":"2020-02-21T00:00:00.000Z","color":"red","axis":"x"}],"events":[],"format":"date","data":[["2018-09-03T00:00:00.000Z","2018-09-04T00:00:00.000Z","2018-09-05T00:00:00.000Z","2018-09-06T00:00:00.000Z","2018-09-10T00:00:00.000Z","2018-09-11T00:00:00.000Z","2018-09-12T00:00:00.000Z","2018-09-13T00:00:00.000Z","2018-09-14T00:00:00.000Z","2018-09-17T00:00:00.000Z","2018-09-18T00:00:00.000Z","2018-09-19T00:00:00.000Z","2018-09-20T00:00:00.000Z","2018-09-21T00:00:00.000Z","2018-09-24T00:00:00.000Z","2018-09-25T00:00:00.000Z","2018-09-26T00:00:00.000Z","2018-09-27T00:00:00.000Z","2018-09-28T00:00:00.000Z","2018-10-01T00:00:00.000Z","2018-10-02T00:00:00.000Z","2018-10-03T00:00:00.000Z","2018-10-04T00:00:00.000Z","2018-10-05T00:00:00.000Z","2018-10-08T00:00:00.000Z","2018-10-09T00:00:00.000Z","2018-10-10T00:00:00.000Z","2018-10-11T00:00:00.000Z","2018-10-15T00:00:00.000Z","2018-10-16T00:00:00.000Z","2018-10-17T00:00:00.000Z","2018-10-18T00:00:00.000Z","2018-10-19T00:00:00.000Z","2018-10-22T00:00:00.000Z","2018-10-23T00:00:00.000Z","2018-10-24T00:00:00.000Z","2018-10-25T00:00:00.000Z","2018-10-26T00:00:00.000Z","2018-10-29T00:00:00.000Z","2018-10-30T00:00:00.000Z","2018-10-31T00:00:00.000Z","2018-11-01T00:00:00.000Z","2018-11-05T00:00:00.000Z","2018-11-06T00:00:00.000Z","2018-11-07T00:00:00.000Z","2018-11-08T00:00:00.000Z","2018-11-09T00:00:00.000Z","2018-11-12T00:00:00.000Z","2018-11-13T00:00:00.000Z","2018-11-14T00:00:00.000Z","2018-11-16T00:00:00.000Z","2018-11-19T00:00:00.000Z","2018-11-21T00:00:00.000Z","2018-11-22T00:00:00.000Z","2018-11-23T00:00:00.000Z","2018-11-26T00:00:00.000Z","2018-11-27T00:00:00.000Z","2018-11-28T00:00:00.000Z","2018-11-29T00:00:00.000Z","2018-11-30T00:00:00.000Z","2018-12-03T00:00:00.000Z","2018-12-04T00:00:00.000Z","2018-12-05T00:00:00.000Z","2018-12-06T00:00:00.000Z","2018-12-07T00:00:00.000Z","2018-12-10T00:00:00.000Z","2018-12-11T00:00:00.000Z","2018-12-12T00:00:00.000Z","2018-12-13T00:00:00.000Z","2018-12-14T00:00:00.000Z","2018-12-17T00:00:00.000Z","2018-12-18T00:00:00.000Z","2018-12-19T00:00:00.000Z","2018-12-20T00:00:00.000Z","2018-12-21T00:00:00.000Z","2018-12-26T00:00:00.000Z","2018-12-27T00:00:00.000Z","2018-12-28T00:00:00.000Z","2019-01-02T00:00:00.000Z","2019-01-03T00:00:00.000Z","2019-01-04T00:00:00.000Z","2019-01-07T00:00:00.000Z","2019-01-08T00:00:00.000Z","2019-01-09T00:00:00.000Z","2019-01-10T00:00:00.000Z","2019-01-11T00:00:00.000Z","2019-01-14T00:00:00.000Z","2019-01-15T00:00:00.000Z","2019-01-16T00:00:00.000Z","2019-01-17T00:00:00.000Z","2019-01-18T00:00:00.000Z","2019-01-21T00:00:00.000Z","2019-01-22T00:00:00.000Z","2019-01-23T00:00:00.000Z","2019-01-24T00:00:00.000Z","2019-01-28T00:00:00.000Z","2019-01-29T00:00:00.000Z","2019-01-30T00:00:00.000Z","2019-01-31T00:00:00.000Z","2019-02-01T00:00:00.000Z","2019-02-04T00:00:00.000Z","2019-02-05T00:00:00.000Z","2019-02-06T00:00:00.000Z","2019-02-07T00:00:00.000Z","2019-02-08T00:00:00.000Z","2019-02-11T00:00:00.000Z","2019-02-12T00:00:00.000Z","2019-02-13T00:00:00.000Z","2019-02-14T00:00:00.000Z","2019-02-15T00:00:00.000Z","2019-02-18T00:00:00.000Z","2019-02-19T00:00:00.000Z","2019-02-20T00:00:00.000Z","2019-02-21T00:00:00.000Z","2019-02-22T00:00:00.000Z","2019-02-25T00:00:00.000Z","2019-02-26T00:00:00.000Z","2019-02-27T00:00:00.000Z","2019-02-28T00:00:00.000Z","2019-03-01T00:00:00.000Z","2019-03-06T00:00:00.000Z","2019-03-07T00:00:00.000Z","2019-03-08T00:00:00.000Z","2019-03-11T00:00:00.000Z","2019-03-12T00:00:00.000Z","2019-03-13T00:00:00.000Z","2019-03-14T00:00:00.000Z","2019-03-15T00:00:00.000Z","2019-03-18T00:00:00.000Z","2019-03-19T00:00:00.000Z","2019-03-20T00:00:00.000Z","2019-03-21T00:00:00.000Z","2019-03-22T00:00:00.000Z","2019-03-25T00:00:00.000Z","2019-03-26T00:00:00.000Z","2019-03-27T00:00:00.000Z","2019-03-28T00:00:00.000Z","2019-03-29T00:00:00.000Z","2019-04-01T00:00:00.000Z","2019-04-02T00:00:00.000Z","2019-04-03T00:00:00.000Z","2019-04-04T00:00:00.000Z","2019-04-05T00:00:00.000Z","2019-04-08T00:00:00.000Z","2019-04-09T00:00:00.000Z","2019-04-10T00:00:00.000Z","2019-04-11T00:00:00.000Z","2019-04-12T00:00:00.000Z","2019-04-15T00:00:00.000Z","2019-04-16T00:00:00.000Z","2019-04-17T00:00:00.000Z","2019-04-18T00:00:00.000Z","2019-04-22T00:00:00.000Z","2019-04-23T00:00:00.000Z","2019-04-24T00:00:00.000Z","2019-04-25T00:00:00.000Z","2019-04-26T00:00:00.000Z","2019-04-29T00:00:00.000Z","2019-04-30T00:00:00.000Z","2019-05-02T00:00:00.000Z","2019-05-03T00:00:00.000Z","2019-05-06T00:00:00.000Z","2019-05-07T00:00:00.000Z","2019-05-08T00:00:00.000Z","2019-05-09T00:00:00.000Z","2019-05-10T00:00:00.000Z","2019-05-13T00:00:00.000Z","2019-05-14T00:00:00.000Z","2019-05-15T00:00:00.000Z","2019-05-16T00:00:00.000Z","2019-05-17T00:00:00.000Z","2019-05-20T00:00:00.000Z","2019-05-21T00:00:00.000Z","2019-05-22T00:00:00.000Z","2019-05-23T00:00:00.000Z","2019-05-24T00:00:00.000Z","2019-05-27T00:00:00.000Z","2019-05-28T00:00:00.000Z","2019-05-29T00:00:00.000Z","2019-05-30T00:00:00.000Z","2019-05-31T00:00:00.000Z","2019-06-03T00:00:00.000Z","2019-06-04T00:00:00.000Z","2019-06-05T00:00:00.000Z","2019-06-06T00:00:00.000Z","2019-06-07T00:00:00.000Z","2019-06-10T00:00:00.000Z","2019-06-11T00:00:00.000Z","2019-06-12T00:00:00.000Z","2019-06-13T00:00:00.000Z","2019-06-14T00:00:00.000Z","2019-06-17T00:00:00.000Z","2019-06-18T00:00:00.000Z","2019-06-19T00:00:00.000Z","2019-06-21T00:00:00.000Z","2019-06-24T00:00:00.000Z","2019-06-25T00:00:00.000Z","2019-06-26T00:00:00.000Z","2019-06-27T00:00:00.000Z","2019-06-28T00:00:00.000Z","2019-07-01T00:00:00.000Z","2019-07-02T00:00:00.000Z","2019-07-03T00:00:00.000Z","2019-07-04T00:00:00.000Z","2019-07-05T00:00:00.000Z","2019-07-08T00:00:00.000Z","2019-07-10T00:00:00.000Z","2019-07-11T00:00:00.000Z","2019-07-12T00:00:00.000Z","2019-07-15T00:00:00.000Z","2019-07-16T00:00:00.000Z","2019-07-17T00:00:00.000Z","2019-07-18T00:00:00.000Z","2019-07-19T00:00:00.000Z","2019-07-22T00:00:00.000Z","2019-07-23T00:00:00.000Z","2019-07-24T00:00:00.000Z","2019-07-25T00:00:00.000Z","2019-07-26T00:00:00.000Z","2019-07-29T00:00:00.000Z","2019-07-30T00:00:00.000Z","2019-07-31T00:00:00.000Z","2019-08-01T00:00:00.000Z","2019-08-02T00:00:00.000Z","2019-08-05T00:00:00.000Z","2019-08-06T00:00:00.000Z","2019-08-07T00:00:00.000Z","2019-08-08T00:00:00.000Z","2019-08-09T00:00:00.000Z","2019-08-12T00:00:00.000Z","2019-08-13T00:00:00.000Z","2019-08-14T00:00:00.000Z","2019-08-15T00:00:00.000Z","2019-08-16T00:00:00.000Z","2019-08-19T00:00:00.000Z","2019-08-20T00:00:00.000Z","2019-08-21T00:00:00.000Z","2019-08-22T00:00:00.000Z","2019-08-23T00:00:00.000Z","2019-08-26T00:00:00.000Z","2019-08-27T00:00:00.000Z","2019-08-28T00:00:00.000Z","2019-08-29T00:00:00.000Z","2019-08-30T00:00:00.000Z","2019-09-02T00:00:00.000Z","2019-09-03T00:00:00.000Z","2019-09-04T00:00:00.000Z","2019-09-05T00:00:00.000Z","2019-09-06T00:00:00.000Z","2019-09-09T00:00:00.000Z","2019-09-10T00:00:00.000Z","2019-09-11T00:00:00.000Z","2019-09-12T00:00:00.000Z","2019-09-13T00:00:00.000Z","2019-09-16T00:00:00.000Z","2019-09-17T00:00:00.000Z","2019-09-18T00:00:00.000Z","2019-09-19T00:00:00.000Z","2019-09-20T00:00:00.000Z","2019-09-23T00:00:00.000Z","2019-09-24T00:00:00.000Z","2019-09-25T00:00:00.000Z","2019-09-26T00:00:00.000Z","2019-09-27T00:00:00.000Z","2019-09-30T00:00:00.000Z","2019-10-01T00:00:00.000Z","2019-10-02T00:00:00.000Z","2019-10-03T00:00:00.000Z","2019-10-04T00:00:00.000Z","2019-10-07T00:00:00.000Z","2019-10-08T00:00:00.000Z","2019-10-09T00:00:00.000Z","2019-10-10T00:00:00.000Z","2019-10-11T00:00:00.000Z","2019-10-14T00:00:00.000Z","2019-10-15T00:00:00.000Z","2019-10-16T00:00:00.000Z","2019-10-17T00:00:00.000Z","2019-10-18T00:00:00.000Z","2019-10-21T00:00:00.000Z","2019-10-22T00:00:00.000Z","2019-10-23T00:00:00.000Z","2019-10-24T00:00:00.000Z","2019-10-25T00:00:00.000Z","2019-10-28T00:00:00.000Z","2019-10-29T00:00:00.000Z","2019-10-30T00:00:00.000Z","2019-10-31T00:00:00.000Z","2019-11-01T00:00:00.000Z","2019-11-04T00:00:00.000Z","2019-11-05T00:00:00.000Z","2019-11-06T00:00:00.000Z","2019-11-07T00:00:00.000Z","2019-11-08T00:00:00.000Z","2019-11-11T00:00:00.000Z","2019-11-12T00:00:00.000Z","2019-11-13T00:00:00.000Z","2019-11-14T00:00:00.000Z","2019-11-18T00:00:00.000Z","2019-11-19T00:00:00.000Z","2019-11-21T00:00:00.000Z","2019-11-22T00:00:00.000Z","2019-11-25T00:00:00.000Z","2019-11-26T00:00:00.000Z","2019-11-27T00:00:00.000Z","2019-11-28T00:00:00.000Z","2019-11-29T00:00:00.000Z","2019-12-02T00:00:00.000Z","2019-12-03T00:00:00.000Z","2019-12-04T00:00:00.000Z","2019-12-05T00:00:00.000Z","2019-12-06T00:00:00.000Z","2019-12-09T00:00:00.000Z","2019-12-10T00:00:00.000Z","2019-12-11T00:00:00.000Z","2019-12-12T00:00:00.000Z","2019-12-13T00:00:00.000Z","2019-12-16T00:00:00.000Z","2019-12-17T00:00:00.000Z","2019-12-18T00:00:00.000Z","2019-12-19T00:00:00.000Z","2019-12-20T00:00:00.000Z","2019-12-23T00:00:00.000Z","2019-12-26T00:00:00.000Z","2019-12-27T00:00:00.000Z","2019-12-30T00:00:00.000Z","2020-01-02T00:00:00.000Z","2020-01-03T00:00:00.000Z","2020-01-06T00:00:00.000Z","2020-01-07T00:00:00.000Z","2020-01-08T00:00:00.000Z","2020-01-09T00:00:00.000Z","2020-01-10T00:00:00.000Z","2020-01-13T00:00:00.000Z","2020-01-14T00:00:00.000Z","2020-01-15T00:00:00.000Z","2020-01-16T00:00:00.000Z","2020-01-17T00:00:00.000Z","2020-01-20T00:00:00.000Z","2020-01-21T00:00:00.000Z","2020-01-22T00:00:00.000Z","2020-01-23T00:00:00.000Z","2020-01-24T00:00:00.000Z","2020-01-27T00:00:00.000Z","2020-01-28T00:00:00.000Z","2020-01-29T00:00:00.000Z","2020-01-30T00:00:00.000Z","2020-01-31T00:00:00.000Z","2020-02-03T00:00:00.000Z","2020-02-04T00:00:00.000Z","2020-02-05T00:00:00.000Z","2020-02-06T00:00:00.000Z","2020-02-07T00:00:00.000Z","2020-02-10T00:00:00.000Z","2020-02-11T00:00:00.000Z","2020-02-12T00:00:00.000Z","2020-02-13T00:00:00.000Z","2020-02-14T00:00:00.000Z","2020-02-17T00:00:00.000Z","2020-02-18T00:00:00.000Z","2020-02-19T00:00:00.000Z","2020-02-20T00:00:00.000Z","2020-02-21T00:00:00.000Z","2020-02-26T00:00:00.000Z","2020-02-27T00:00:00.000Z","2020-02-28T00:00:00.000Z","2020-03-02T00:00:00.000Z","2020-03-03T00:00:00.000Z","2020-03-04T00:00:00.000Z","2020-03-05T00:00:00.000Z","2020-03-06T00:00:00.000Z","2020-03-09T00:00:00.000Z","2020-03-10T00:00:00.000Z","2020-03-11T00:00:00.000Z","2020-03-12T00:00:00.000Z","2020-03-13T00:00:00.000Z","2020-03-16T00:00:00.000Z","2020-03-17T00:00:00.000Z","2020-03-18T00:00:00.000Z","2020-03-19T00:00:00.000Z","2020-03-20T00:00:00.000Z","2020-03-23T00:00:00.000Z","2020-03-24T00:00:00.000Z","2020-03-25T00:00:00.000Z","2020-03-26T00:00:00.000Z","2020-03-27T00:00:00.000Z","2020-03-30T00:00:00.000Z","2020-03-31T00:00:00.000Z","2020-04-01T00:00:00.000Z","2020-04-02T00:00:00.000Z","2020-04-03T00:00:00.000Z","2020-04-06T00:00:00.000Z","2020-04-07T00:00:00.000Z","2020-04-08T00:00:00.000Z","2020-04-09T00:00:00.000Z","2020-04-13T00:00:00.000Z","2020-04-14T00:00:00.000Z","2020-04-15T00:00:00.000Z","2020-04-16T00:00:00.000Z","2020-04-17T00:00:00.000Z","2020-04-20T00:00:00.000Z","2020-04-22T00:00:00.000Z","2020-04-23T00:00:00.000Z","2020-04-24T00:00:00.000Z","2020-04-27T00:00:00.000Z","2020-04-28T00:00:00.000Z","2020-04-29T00:00:00.000Z","2020-04-30T00:00:00.000Z","2020-05-04T00:00:00.000Z","2020-05-05T00:00:00.000Z","2020-05-06T00:00:00.000Z","2020-05-07T00:00:00.000Z","2020-05-08T00:00:00.000Z","2020-05-11T00:00:00.000Z","2020-05-12T00:00:00.000Z","2020-05-13T00:00:00.000Z","2020-05-14T00:00:00.000Z","2020-05-15T00:00:00.000Z","2020-05-18T00:00:00.000Z","2020-05-19T00:00:00.000Z","2020-05-20T00:00:00.000Z","2020-05-21T00:00:00.000Z","2020-05-22T00:00:00.000Z","2020-05-25T00:00:00.000Z","2020-05-26T00:00:00.000Z","2020-05-27T00:00:00.000Z","2020-05-28T00:00:00.000Z","2020-05-29T00:00:00.000Z","2020-06-01T00:00:00.000Z","2020-06-02T00:00:00.000Z","2020-06-03T00:00:00.000Z","2020-06-04T00:00:00.000Z","2020-06-05T00:00:00.000Z","2020-06-08T00:00:00.000Z","2020-06-09T00:00:00.000Z","2020-06-10T00:00:00.000Z","2020-06-12T00:00:00.000Z","2020-06-15T00:00:00.000Z","2020-06-16T00:00:00.000Z","2020-06-17T00:00:00.000Z","2020-06-18T00:00:00.000Z","2020-06-19T00:00:00.000Z","2020-06-22T00:00:00.000Z","2020-06-23T00:00:00.000Z","2020-06-24T00:00:00.000Z","2020-06-25T00:00:00.000Z","2020-06-26T00:00:00.000Z","2020-06-29T00:00:00.000Z","2020-06-30T00:00:00.000Z","2020-07-01T00:00:00.000Z","2020-07-02T00:00:00.000Z","2020-07-03T00:00:00.000Z","2020-07-06T00:00:00.000Z","2020-07-07T00:00:00.000Z","2020-07-08T00:00:00.000Z","2020-07-09T00:00:00.000Z","2020-07-10T00:00:00.000Z","2020-07-13T00:00:00.000Z","2020-07-14T00:00:00.000Z","2020-07-15T00:00:00.000Z","2020-07-16T00:00:00.000Z","2020-07-17T00:00:00.000Z","2020-07-20T00:00:00.000Z","2020-07-21T00:00:00.000Z","2020-07-22T00:00:00.000Z","2020-07-23T00:00:00.000Z","2020-07-24T00:00:00.000Z","2020-07-27T00:00:00.000Z","2020-07-28T00:00:00.000Z","2020-07-29T00:00:00.000Z","2020-07-30T00:00:00.000Z"],[53.299999,53.599998,52.080002,52.790001,53.91,52.610001,53,53.700001,54.099998,55.299999,55.630001,57.610001,59.209999,59.889999,60.849998,60,62.200001,60.220001,58.849998,59.68,60.869999,62.009998,59.990002,57.849998,57,57.400002,57.380001,56.439999,56.950001,57.939999,58.34,58.849998,57.099998,57.700001,57.310001,57.400002,55.970001,54.900002,54.029999,53.599998,54.349998,56.75,57.610001,57,57.790001,57.779999,56.5,55.099998,54.900002,55.209999,55.849998,56.150002,54.150002,54.689999,53.389999,49.950001,49.689999,50.5,51.919998,51.560001,55.599998,54.349998,53.299999,51.700001,52.48,51.119999,51.150002,51.150002,50.849998,50.380001,51.900002,51.349998,51.799999,50.740002,50.279999,50.110001,50.099998,50.310001,50.009998,50.799999,49.82,52.869999,52.200001,53.16,53.23,53.259998,51.98,52.849998,52.400002,52.439999,54.950001,54.849998,54.48,55.459999,55.799999,45,43.27,46.25,46.990002,45.720001,46,44.450001,44,42.150002,40.639999,43.860001,42.5,44.310001,45.389999,45.400002,45.790001,45.5,45.900002,45.84,45.700001,47.349998,46.790001,47.25,46.580002,47.290001,47.43,47.830002,48.259998,48.900002,49.799999,49.939999,50.799999,50.799999,50.25,50.700001,51.450001,50.529999,50.470001,49.599998,49.810001,50.049999,50.509998,49.950001,52.349998,53.049999,52.779999,52,52.200001,52.5,53.18,52.740002,51.5,52.09,51.59,51.27,53.16,52.200001,51.950001,51.59,51.549999,50.23,50.48,50.939999,50.220001,49.279999,49.450001,49.599998,49.349998,49.82,49,48.299999,48.529999,48.18,47.150002,48.549999,46.400002,47.619999,47.099998,47.779999,47.07,48.639999,49,49.950001,49.52,49.709999,49.509998,49.349998,49.18,49.279999,48.889999,49.049999,48.950001,49.759998,51.549999,51.900002,51.700001,51,51,53,52.75,52.48,52.189999,51.5,52.150002,52.07,53.099998,54.099998,51.77,51.68,50.400002,50.650002,51.610001,51.869999,52.459999,52.459999,53.200001,52.990002,52.610001,52.810001,52.18,52.400002,51.09,51,51,50.299999,50.169998,50.380001,49.240002,48.200001,46.599998,46.459999,45.849998,47.299999,46.700001,45.150002,45.549999,45.98,45.009998,44.450001,44.290001,43.509998,43.599998,44.380001,43.830002,43.490002,43.150002,43.310001,44.110001,45.990002,46.549999,46,46.049999,46.950001,46.450001,46.700001,47.880001,48.599998,48.619999,49.959999,49.400002,48.25,49,48.400002,48.66,48.189999,47.709999,47.029999,48.099998,48.150002,47.650002,47.849998,46.900002,45.32,45.700001,46.299999,46.299999,45.669998,46.060001,48.029999,48.200001,47.880001,47.389999,46.990002,46.889999,46.419998,47.279999,47.599998,47.459999,47.75,48.650002,48.41,48.400002,48.099998,47.799999,49.080002,50.07,49.900002,49.84,49.330002,48.439999,48.299999,47.650002,47.349998,47.720001,48.110001,47.759998,48.549999,50.540001,50.599998,50.93,50.560001,50.369999,50.150002,51.25,50.830002,50.700001,51.25,52.25,51.220001,51.380001,52.099998,53.299999,54.5,53.25,53.279999,53.5,54.77,54.900002,54.810001,53.990002,53.650002,53.98,53.68,53.799999,53.5,54.200001,53.75,53.75,53.639999,55.299999,55.299999,55.599998,56.25,57,56.799999,56.599998,55.43,55.619999,51.66,51.200001,51.700001,49.970001,50.959999,50.5,52.200001,53.32,53.66,52.880001,51.900002,51.150002,53.099998,52.220001,52.209999,51.709999,52.549999,52.93,53.27,51,46.66,44.650002,43.990002,44.880001,46.740002,48,47.66,44.200001,40.450001,41.900002,43.009998,36,42,36.009998,40.5,38.799999,37.5,37.900002,35.549999,36.860001,38.189999,41.009998,39.299999,40.919998,42.299999,41.810001,43.950001,42.799999,42.599998,45.189999,43.5,43.950001,43.200001,45.619999,43.5,43.799999,43.900002,43.259998,42.599998,43.290001,43.369999,44.459999,45.200001,45.349998,45.709999,43.700001,44.450001,44.189999,45.630001,47.5,48.209999,48.43,48.169998,47.950001,48.689999,50.34,51.299999,53.369999,52.290001,50.77,51.41,50.380001,49.84,51,51.400002,52.82,53.799999,53.900002,53.720001,56.389999,54.98,54.16,54.91,53.709999,52.5,55.490002,55.490002,56.299999,56.330002,55,55.529999,56.25,55.5,55.900002,55.439999,55.439999,56.080002,54.849998,55.200001,56.09,56.740002,56.900002,57.52,56.52,57.73,57.919998,62.299999,61.299999,60.5,61.119999,60.439999,59.93,59.900002,58.57,59.099998,60.700001,61.209999,62.299999],[54.169998,53.790001,52.639999,53.869999,54.040001,52.990002,53.709999,54.43,55.23,55.57,57.470001,58.939999,59.610001,61.009998,61.25,62.220001,62.419998,60.75,60.290001,60.57,61.740002,62.189999,60.34,58.310001,57.57,58.32,58.139999,57.16,58.450001,58.849998,58.919998,58.849998,57.529999,58.419998,57.549999,57.59,56.040001,55.889999,54.389999,54.849998,56.709999,58.259998,58,57.849998,58.150002,58.77,57,55.450001,56.27,55.669998,56.349998,56.279999,54.549999,54.720001,53.389999,51.09,50.490002,52.32,52.73,53.689999,55.68,54.52,53.48,52.599998,53.259998,51.639999,51.740002,51.400002,51.279999,51.189999,52.27,52.189999,52.400002,51.169998,51.25,50.700001,50.389999,51.200001,51.369999,50.939999,52.450001,53.650002,52.799999,54.060001,53.290001,53.459999,52.700001,53.200001,52.82,54.709999,55.599998,55.349998,55.080002,55.900002,56.200001,45,44.689999,46.799999,47.439999,46.330002,46.099998,45.209999,44.400002,42.790001,43.59,44.049999,44.330002,45.990002,45.939999,46.02,46.150002,45.939999,46.080002,46.09,47.060001,47.75,47.290001,47.25,47.099998,47.5,48.049999,48.959999,48.889999,49.950001,50.330002,51,50.93,51.240002,50.669998,52.389999,51.68,51.470001,51.330002,50.310001,50.700001,50.740002,50.599998,51.599998,53.049999,53.299999,52.830002,52.459999,52.360001,53.389999,53.299999,52.740002,51.860001,52.720001,51.720001,53.16,53.799999,52.970001,52,51.919998,51.740002,50.43,50.650002,51.060001,50.689999,49.279999,50.630001,49.75,49.700001,50.139999,49.009998,49.799999,48.75,48.349998,48.450001,48.93,47.720001,47.740002,47.959999,48.689999,47.900002,49.43,50.25,50.950001,49.849998,50.130001,51,49.599998,49.349998,49.43,48.939999,49.099998,49.23,51.48,52.09,52.25,51.82,51.330002,52.419998,53.099998,52.93,52.48,52.470001,52.040001,52.150002,52.200001,53.790001,54.16,51.970001,52.099998,50.580002,51.599998,52.560001,52.5,52.779999,52.93,53.470001,53.119999,52.82,53.23,52.66,52.599998,51.259998,51.119999,51.049999,50.599998,50.580002,50.549999,49.34,48.290001,46.599998,46.970001,46.48,47.490002,46.810001,45.990002,46.799999,45.98,45.5,44.700001,44.43,44.490002,44.330002,44.380001,44.59,43.650002,43.91,44.169998,45.25,46.330002,46.669998,46.049999,46.52,47.189999,46.689999,47.889999,48.5,48.599998,49.77,50.299999,49.439999,49.150002,49,48.580002,48.740002,48.580002,47.880001,48.02,48.279999,48.349998,48.040001,48.880001,46.900002,45.810001,46.790001,46.98,46.369999,46.040001,47.450001,48.919998,48.25,48.290001,47.52,47.049999,47.18,47.209999,47.540001,47.830002,47.57,48.560001,48.799999,48.799999,48.619999,48.48,48.700001,49.82,50.279999,49.970001,50.529999,49.549999,48.439999,48.490002,48.060001,47.580002,48.049999,48.490002,48.419998,50.029999,51.18,51.5,51.200001,50.880001,50.470001,51.689999,51.259998,51.029999,51.080002,51.689999,52.490002,51.43,52.049999,53.060001,54,54.669998,53.709999,53.540001,54.240002,54.990002,54.98,55,54,53.860001,54.439999,54.5,53.799999,54.189999,54.369999,53.869999,53.869999,55.639999,56.349998,56.080002,55.950001,57.09,57.360001,57.009998,56.849998,55.73,55.73,51.82,52.09,51.889999,51.5,51.060001,51.09,52.580002,53.619999,53.919998,52.959999,51.900002,52.200001,53.380001,52.400002,52.279999,53.41,53.049999,53.119999,53.490002,51.139999,46.84,45.540001,44.310001,47.09,49.09,49.09,47.950001,45.82,41.540001,45.34,44.290001,36,44.029999,41.400002,43.57,40.869999,39,39.41,35.860001,38.650002,41.349998,42.41,41.439999,42.32,44.490002,44.119999,44.57,42.869999,43.389999,45.5,44.25,44.470001,44.57,46,43.900002,43.990002,44.23,43.259998,43.240002,44.689999,44.200001,45.049999,45.290001,47.380001,46.169998,44.330002,45.029999,44.759998,46.98,48.959999,49.25,48.599998,49.18,48.459999,49.299999,51.599998,52.709999,53.669998,52.66,51.099998,51.68,50.52,50.830002,51.650002,53,53.849998,53.799999,54.34,55.700001,56.700001,55.650002,54.990002,55.200001,54.049999,54.43,55.5,56.439999,56.540001,56.599998,55.349998,56.560001,56.259998,56.150002,56.950001,55.91,56.540001,56.080002,55.740002,55.700001,56.740002,56.98,57.720001,57.68,57.299999,59.220001,61.970001,62.93,61.689999,61.25,61.490002,60.48,60.25,60.16,58.849998,61.630001,61.16,62.950001,62.369999],[53.209999,52,51.75,52.400002,52.959999,52.130001,52.18,53.52,54.049999,54.790001,55.509998,57.529999,58.43,59.599998,60.150002,59.860001,59.75,58.610001,58.849998,59.080002,60.48,59.32,58.669998,57.23,55.259998,56.720001,55.889999,55.619999,56.84,57.25,57.75,56.32,56.360001,57.029999,56,54.43,53.799999,53.509998,52.599998,52.959999,54.27,55.52,57.040001,56.560001,57.400002,57.02,54.130001,54.400002,54.349998,54.25,55.150002,54.810001,53.709999,53.75,50.349998,49,49.099998,50.220001,51.130001,51.560001,53.740002,52.5,52.43,51.07,51.09,50.189999,50.25,50.349998,50.25,49.849998,51.029999,51.349998,50.009998,49.450001,50.220001,49.400002,49.279999,50.25,49.790001,48.400002,49.82,51.720001,51.619999,52.830002,52.27,52.380001,51.43,51.869999,52.200001,52.27,54.25,54.389999,54.349998,55.330002,55.5,42.360001,42.599998,44.98,45.5,45.580002,44.049999,43.810001,42.459999,41.209999,40.509998,41.889999,42.049999,44.299999,45.049999,45.189999,44.900002,45.23,44.939999,45.130001,45.57,46.400002,46.599998,46.34,46.099998,44.549999,47.189999,47.720001,47.650002,48.610001,49.549999,49.700001,50.200001,50.400002,49.830002,50.59,50.400002,50.509998,49.700001,49.16,49.799999,49.310001,48.619999,49.950001,52.099998,51.630001,51.610001,51.619999,51.700001,52.360001,52.299999,51.52,50.93,51.310001,50.779999,50.84,51.700001,52.009998,50.799999,51.279999,50.16,49.380001,49.52,50.119999,49.759998,48.720001,49.389999,49.09,48.720001,48.939999,48.049999,48.060001,47.43,47.349998,47.02,45.82,46.299999,46.630001,46.09,47.369999,46.419998,48.310001,48.900002,49.849998,49.150002,49.439999,48.709999,48.439999,48.299999,47.860001,48.310001,48.360001,48.330002,49.66,50.93,51.59,51.150002,50.200001,51,51.830002,52.099998,52.099998,51.34,51.369999,51.52,51.689999,53.099998,50.02,51.150002,51.150002,49.759998,50.459999,51.400002,51.720001,51.73,52.25,52.790001,52.459999,52.23,52.549999,51.810001,51.759998,50.549999,50.099998,50.18,49.799999,50.009998,49.220001,48.25,47.41,45.759998,46.290001,45.450001,46.919998,45.490002,45.029999,45.349998,44.73,43.169998,43.48,43.209999,42.900002,43.07,43.549999,42.900002,42.540001,42.439999,43.040001,43.959999,45.27,45.849998,45.34,45.970001,46.52,46.09,46.290001,47.200001,47.580002,48.599998,49.66,48.349998,48.23,47.98,47.759998,48,47.959999,46.779999,46.830002,47.529999,47.27,47.209999,47.66,45.099998,44.220001,45.68,46.040001,45.32,45.330002,46.060001,48,47.560001,47.529999,46.639999,46.610001,46.02,46.259998,47.099998,47.029999,46.52,47.549999,48.34,48.080002,47.689999,46.860001,47.759998,49.080002,49.43,48.900002,49.540001,48.810001,47.959999,47.900002,46.970001,46.959999,47.48,47.720001,47.700001,48.549999,50.43,50.459999,50.130001,49.689999,49.82,50.110001,50.25,50.529999,50.549999,51.029999,51.330002,50.900002,51.220001,51.73,52.84,53.34,53.049999,52.599998,53.220001,54.150002,54.400002,54.509998,53.419998,53.200001,53.75,53.580002,53.150002,53.400002,53.619999,53.049999,53.110001,53.509998,55,55.110001,55.099998,56.099998,56.529999,55.740002,56.060001,54.709999,53.689999,50.48,51.080002,50.459999,49.799999,49.799999,49.799999,51.970001,52.990002,52.82,51.919998,49.919998,51.02,52.830002,51.560001,50.950001,51.619999,52.119999,52.400002,52.060001,49.799999,45.060001,43.560001,43.200001,44.810001,46.07,47,45.950001,43.650002,37.810001,40.799999,39,32.450001,37,36.009998,39.110001,35.700001,35.259998,34.709999,33.369999,36.860001,38.09,39.990002,39.200001,40.740002,42.220001,41.200001,41.919998,39.759998,41.970001,43.560001,43.049999,42.84,42.98,44.5,42.610001,42.040001,43.220001,42.23,42.049999,42.810001,41.830002,43.860001,43.48,44.84,44.759998,43.400002,43.700001,43.610001,45.450001,46.970001,47.73,47.459999,47.66,46.939999,48.049999,49.950001,51.09,52.5,50.369999,49.900002,49.919998,48.84,48.779999,50.049999,51.060001,52.5,53,53.380001,53.52,54.34,53.98,54.119999,53.759998,51.98,52.130001,54.220001,55.150002,55.610001,54.709999,54.43,55.369999,54.82,54.869999,55.209999,54.84,55.009998,54.049999,54.75,54.93,55.59,56.099998,55.790001,56.060001,56.16,57.650002,57.900002,60.389999,59.849998,60.32,60.349998,59.27,58.799999,58.639999,57.82,58.98,60.200001,60.849998,60.650002],[54.049999,52,52.150002,53.48,53.220001,52.59,53.450001,53.779999,55.200001,55.040001,57.34,58.580002,59.32,61.009998,60.200001,62.200001,60.009998,59.48,59.82,60.400002,61.200001,59.950001,58.799999,57.490002,57.049999,57.700001,55.889999,56.48,57.669998,57.700001,58.799999,56.5,56.529999,58.369999,56.75,54.43,54.610001,55.599998,53.099998,53.869999,56.709999,57.5,57.529999,57.23,57.59,57.02,54.650002,54.849998,56.27,55.16,56.150002,55.369999,54.529999,54.040001,50.349998,50.119999,49.919998,52.299999,52,52.799999,54.110001,52.880001,52.799999,52.299999,51.290001,50.200001,50.599998,50.369999,50.599998,50.880001,51.25,51.439999,50.009998,49.810001,50.860001,50.439999,49.5,51,51.09,49,52.189999,51.91,52.41,53.689999,53.099998,52.380001,52.599998,52.349998,52.650002,54.23,54.759998,55.279999,55.080002,55.650002,56.150002,42.360001,42.740002,46.599998,45.5,46.25,44.68,44.52,42.459999,41.59,43.16,42.02,44.299999,45.490002,45.66,45.880001,45.25,45.490002,45.799999,45.380001,46.990002,47.119999,47.200001,46.830002,47.099998,46.740002,48.049999,48.860001,48.849998,49.880001,49.970001,50.700001,50.709999,50.549999,50.459999,51.900002,50.560001,50.889999,50.049999,49.549999,50.279999,49.599998,49.299999,50.93,52.599998,51.630001,51.779999,52.16,51.98,53.389999,52.349998,51.759998,51.790001,51.48,51.330002,53.099998,52.25,52.580002,51.299999,51.919998,50.360001,50.330002,50.419998,50.25,50.099998,48.939999,50.400002,49.66,49.700001,49,48.540001,49.459999,47.43,47.59,47.950001,46.400002,47.720001,46.75,47.41,47.459999,47.82,48.310001,50.189999,50.25,49.700001,50.009998,49,48.830002,49.110001,48.389999,48.799999,48.66,48.34,51.43,51.490002,51.849998,51.400002,50.200001,52,52.299999,52.439999,52.400002,51.380001,51.580002,51.700001,51.82,53.650002,51.389999,51.290001,51.669998,50.360001,50.950001,52.130001,52.049999,51.810001,52.689999,53.049999,52.689999,52.59,52.720001,52.450001,51.759998,50.650002,50.490002,50.23,50.259998,50.009998,49.810001,48.400002,47.84,46,46.619999,46.48,47.18,45.490002,45.16,46.5,44.880001,43.889999,43.689999,43.650002,43.84,44.150002,43.889999,43.279999,42.799999,43.32,43.48,45.099998,45.57,46.009998,45.52,46.52,46.52,46.450001,47.889999,48.240002,47.950001,49.689999,49.790001,48.59,48.900002,48.400002,48.32,48.419998,48.099998,46.93,47.860001,47.860001,47.66,47.75,47.709999,45.099998,45.439999,46.59,46.040001,45.32,45.669998,47.240002,48.639999,47.990002,47.91,46.799999,46.709999,46.029999,47.209999,47.299999,47.110001,46.75,48.560001,48.700001,48.650002,48.59,47.200001,48.439999,49.82,49.869999,49.689999,50.110001,49.18,48.130001,47.900002,47.119999,47,47.610001,48.169998,48.419998,50.029999,50.860001,51.220001,50.580002,50.369999,49.98,51.34,50.419998,50.919998,50.950001,51.349998,51.439999,51.200001,51.830002,52.950001,53.759998,53.34,53.419998,53.470001,54,54.790001,54.580002,54.790001,53.599998,53.299999,54.330002,53.93,53.610001,54,54.009998,53.299999,53.360001,55.299999,55.639999,55.459999,55.169998,57,57.360001,56.029999,56.299999,55.5,53.799999,50.509998,51.200001,50.75,51.5,50.27,50.91,52.27,52.990002,53.279999,52.099998,50.189999,52.049999,53.07,52.139999,51,53.41,52.799999,52.810001,52.200001,50.130001,45.349998,44.470001,44.310001,46.360001,46.349998,48.57,46.849998,44.610001,37.830002,44.810001,40.740002,35.349998,42.900002,39.040001,41.509998,38.650002,36.400002,35.189999,34.099998,37.639999,40.849998,42,40.099998,41.77,43.220001,43.369999,42.779999,40.5,43.130001,43.779999,43.509998,43.279999,44.57,44.529999,43.189999,42.759998,44,42.459999,42.900002,43.509998,43.759998,44.549999,44.610001,46.73,44.860001,43.93,43.700001,44.330002,46.049999,48.849998,47.73,47.459999,48.540001,48.09,48.049999,51.259998,52.299999,52.5,51.130001,50.27,50.099998,49.200001,50.639999,50.09,53,53.419998,53.419998,53.66,55.66,54.610001,54.779999,54.990002,54.200001,53.400002,53.880001,55.389999,56.200001,56.169998,55.169998,55,55.59,55.389999,56,55.619999,55.630001,55.919998,54.540001,55.490002,55.259998,56.57,56.369999,57.32,56.419998,56.970001,57.650002,61.700001,61.790001,60.119999,61.040001,60.799999,59.700001,59.240002,58.849998,58.599998,61.369999,60.34,62.950001,61.27]],"plotter":"CandlestickPlotter"},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">Yahoo Finance (<a href="#ref-yahoo" role="doc-biblioref">2023</a>)</span>.
+</span></p>
+<p><br>
+<br></p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Votorantim reverte perdas e lucra R$ 77 milhões no 3º trimestre</strong></p>
+</div>
+<p><span style="font-size: 80%">
+<strong>13/11/2020 05h01</strong>
+</span></p>
+<p>Depois de um trimestre com desempenho bem acima do esperado, em meio a uma pandemia que atingiu todo o mundo, a expectativa da Votorantim é se esse ritmo de recuperação terá fôlego neste e nos próximos trimestres em 2021. Essa é a grande pergunta, disse ao Valor o diretor financeiro e de RI da Votorantim S.A. (VSA), Sérgio Malacrida[…]</p>
+<p>A receita líquida da VSA cresceu 30% no trimestre, comparado com mesmo período de 2019, indo a R$ 10,73 bilhões. Em nove meses, somou R$ 25,12 bilhões, alta de 10% ante um ao atrás. O lucro antes de juros, impostos, depreciação e amortização (Ebitda, na sigla em inglês) ajustado teve aumento de 125% sobre terceiro trimestre, para R$ 2,68 bilhões.</p>
+<p>O balanço ainda registrou <strong>redução no valor recuperável de ativos (<em>impairment</em>)</strong> de R$ 350 milhões de duas minas da Nexa Resources, no Peru. <strong>A companhia, que sofreu muito com o lockdown</strong> imposto pelo governo peruano em abril, mas já está com operações retomadas ao nível de antes da crise. Agora, observa a crise política que o país enfrenta e possíveis impactos na economia.</p>
+<p>Com o bom desempenho no resultado operacional de todas as empresas, a alavancagem financeira da VSA, medida pela <strong>relação de dívida líquida sobre o Ebitda ajustado, ficou em 2,69 vezes</strong>, ainda acima de 1,94 vez do fim de 2019. Porém, verificou-se queda ante as 3,92 vezes no fim de julho e 3,55 vezes no fim de março. Isso demonstrou uma melhora significativa no ano, destacou o grupo.</p>
+<p>A companhia encerrou setembro com dívida bruta de <strong>R$ 28,8 bilhões</strong>, 46% superior ao valor de dezembro, impactada pelo <strong>efeito do câmbio sobre a dívida</strong> e fruto também dos de <strong>empréstimos da Votorantim Cimentos, Nexa e CBA para reforçar caixa e aumentar liquidez no início da pandemia</strong>. Com a melhora operacional, as empresas já passaram a utilizar a geração de caixa para fazer pré-pagamentos dos compromissos. <strong>A dívida líquida fechou em R$ 15,7 bilhões.</strong> A previsão de investimentos do grupo é de R$ 3,5 bilhões, o mesmo patamar do ano passado.</p>
+<p>Os projetos de expansão de empresas do grupo - principalmente da Nexa e de VC representaram 36% do total. Grande parte foi destinada ao projeto da nova mina da Nexa (projeto da Aripuanã, em Mato Grosso). O restante ficou com a expansão da fábrica de moagem de cimento da VC, em Pecém, no Ceará, que adicionará 800 mil toneladas à capacidade atual da unidade.</p>
+</div>
+<p><br></p>
+</div>
+<div id="a-demonstração-de-resultados-do-exercício" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> A Demonstração de Resultados do Exercício<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#a-demonstração-de-resultados-do-exercício" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><span class="math display">\[
+\mathrm{Receitas - Despesas = Resultados}
+\]</span>
+Balanço como “estoques”<br />
+Demonstrativo como “fluxo”<br />
+Itens de caixa e itens que não afetam o caixa</p>
+<p><strong>Princípios contábeis e a demonstração de resultados</strong></p>
+<p>Reconhecimento ou realização<br />
+Princípio de competência para despesas e receitas<br />
+Vale o momento em que foram “realizadas” (regime de caixa) ou “reconhecidas” (regime de competência)<br />
+</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-23"></span>
+<p class="caption">
+Figura 2.5: Demonstração de resultados do exercício
+</p>
+<img src="Aula02_fig05.jpg" alt="Demonstração de resultados do exercício" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.30</a>)</span>
+</span>
+<br></p>
+<p><strong>Itens que não afetam o caixa</strong></p>
+<p>Item que não afeta o caixa: depreciação do ativo, <em>impairment</em><br />
+Item que afeta o caixa: aquisição do ativo e venda de ativo<br />
+Item que afeta o demonstrativo: depreciação do ativo via tributos<br />
+</p>
+<p><strong>Para o gestor financeiro, o tempo real dos fluxos de entrada e saída é essencial</strong></p>
+<p>Baixa contábeis afetam o lucro líquido, mas não afetam o fluxo de caixa Baixa<br />
+contábeis = depreciação</p>
+<p><strong>Tempo e custos</strong>
+Curto e longo prazo<br />
+Custos dos produtos vendidos = custos variáveis e custos fixos</p>
+</div>
+<div id="impostos" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Impostos<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#impostos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Carga tributária<br />
+Impostos sobre lucros (IRPJ)<br />
+Outras contribuições e impostos locais</p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Principais impostos e contribuições pagos no Brasil</strong></p>
+</div>
+<p><strong>Tributos e Contribuições Federais</strong></p>
+<ul>
+<li>Imposto sobre Importação.<br />
+</li>
+<li><strong>IOF – Imposto sobre Operações Financeiras</strong>. Incide sobre empréstimos, financiamentos e outras operações financeiras, e sobre ações.<br />
+</li>
+<li><strong>IPI – Imposto sobre Produto Industrializado. Cobrado das indústrias.</strong><br />
+</li>
+<li><strong>IRPF – Imposto de Renda Pessoa Física.</strong><br />
+</li>
+<li><strong><span style="color:red">IRPJ – Imposto de Renda Pessoa Jurídica. Incide sobre o lucro das empresas.</span></strong><br />
+</li>
+<li>ITR – Imposto sobre a Propriedade Territorial Rural.<br />
+</li>
+<li>CIDE – Contribuição de Intervenção no Domínio Econômico. Incide sobre petróleo e gás natural e seus derivados, e sobre álcool combustível.<br />
+</li>
+<li>COFINS – Contribuição para o Financiamento da Seguridade Social. Cobrado das empresas.<br />
+</li>
+<li><strong><span style="color:red">CSLL – Contribuição Social sobre o Lucro Líquido.</span></strong><br />
+</li>
+<li>FGTS – Fundo de Garantia do Tempo de Serviço. Percentual do salário de cada trabalhador com carteira assinada depositado pela empresa.<br />
+</li>
+<li>INSS – Instituto Nacional do Seguro Social. Percentual do salário de cada empregado cobrado da empresa (cerca de 28% – varia segundo o ramo de atuação) e do trabalhador (8%) para assistência à saúde.<br />
+</li>
+<li>PIS/Pasep – Programas de Integração Social e de Formação do Patrimônio do Servidor Público. Cobrado das empresas.<br />
+</li>
+<li>Contribuições para o Sistema “S” (Sebrae, SENAC, SENAI, SESI, SESC, etc).</li>
+</ul>
+<p><strong>Impostos e Contribuições Estaduais</strong></p>
+<ul>
+<li><strong>ICMS – Imposto sobre Circulação de Mercadorias. Incide também sobre o transporte interestadual e intermunicipal e telefonia.</strong><br />
+</li>
+<li><strong>IPVA – Imposto sobre a Propriedade de Veículos Automotores.</strong><br />
+</li>
+<li>ITCMD – Imposto sobre a Transmissão Causa Mortis e Doação. Incide sobre herança.</li>
+</ul>
+<p><strong>Impostos Municipais</strong></p>
+<ul>
+<li><strong>IPTU – Imposto sobre a Propriedade Predial e Territorial Urbana.</strong><br />
+</li>
+<li><strong>ISS ou ISSQN – Imposto Sobre Serviços. Cobrado das empresas.</strong><br />
+</li>
+<li>ITBI – Imposto sobre Transmissão de Bens Inter Vivos. Incide sobre a mudança de propriedade de imóveis.</li>
+</ul>
+</div>
+<p><span style="font-size: 80%">
+Fonte: <a href="http://www.senado.gov.br/noticias/jornal/cidadania/impostos/not03.htm" class="uri">http://www.senado.gov.br/noticias/jornal/cidadania/impostos/not03.htm</a>
+</span>
+<br></p>
+<p><strong>Imposto de renda da pessoa jurídica no Brasil</strong></p>
+<p>IRPJ no Brasil = 15% ou 25%.<br />
+CSLL = 9% para todas as empresas e 15% para instituições financeiras.
+Imposto de Renda Marginal (IRPJ+CSLL) = 34%.</p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Alíquotas do Imposto de Renda de Pessoas Jurídicas Tributadas pelo Lucro Real, Presumido ou Arbitrado</strong></p>
+</div>
+<p>São contribuintes e, portanto, estão sujeitos ao pagamento do IRPJ, as pessoas jurídicas e as pessoas físicas a elas equiparadas, domiciliadas no País. Elas devem apurar o IRPJ com base no lucro, que pode ser real, presumido ou arbitrado.</p>
+<p><strong>A alíquota do IRPJ é de 15% (quinze por cento)</strong> sobre o lucro apurado, <strong>com adicional de 10% sobre a parcela do lucro que exceder R$ 20.000,00 / mês.</strong></p>
+<p>A parcela do lucro real que exceder ao resultado da multiplicação de <strong>R$20.000,00 (vinte mil reais) pelo número dos meses</strong> do respectivo período de apuração sujeita-se à incidência <strong>do adicional, à alíquota de 10% (dez por cento).</strong></p>
+<p><strong>A alíquota do adicional é única</strong> para todas as pessoas jurídicas, inclusive instituições financeiras, sociedades seguradoras e assemelhadas.</p>
+</div>
+<p><span style="font-size: 80%">
+Fonte: <a href="http://receita.economia.gov.br/acesso-rapido/tributos/IRPJ" class="uri">http://receita.economia.gov.br/acesso-rapido/tributos/IRPJ</a>
+</span>
+<br></p>
+<div class="blackbox">
+<div class="center">
+<p><strong>Contribuição Social sobre o Lucro Líquido CSLL</strong></p>
+</div>
+<p>Estão sujeitas ao pagamento da CSLL as pessoas jurídicas e as pessoas físicas a elas equiparadas, domiciliadas no País. <strong>A alíquota da CSLL é de 9% (nove por cento) para as pessoas jurídicas em geral, e de 15% (quinze por cento), no caso das pessoas jurídicas consideradas instituições financeiras, de seguros privados e de capitalização.</strong></p>
+<p>A apuração da CSLL deve acompanhar a tributação do lucro adotada para o IRPJ.</p>
+<p><strong>Atenção:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>As entidades sem fins lucrativos de que trata o inciso I do art. 12 do Decreto nº 3.048, de 06 de maio de 1999 , que não se enquadrem na imunidade ou isenção da Lei nº 9.532, de 1997 , devem apurar a base de cálculo e a CSLL devida.</p></li>
+<li><p>As associações de poupança e empréstimo estão isentas do imposto sobre a renda, mas são contribuintes da contribuição social sobre o lucro líquido.</p></li>
+<li><p>São isentas da CSLL as entidades fechadas de previdência complementar, relativamente aos fatos geradores ocorridos a partir de 1º de janeiro de 2002.</p></li>
+<li><p>As entidades sujeitas à CSLL deverão ajustar o resultado do período com as adições determinadas e exclusões admitidas, conforme legislação vigente, para fins de determinação da base de cálculo da contribuição.</p></li>
+<li><p>As entidades sujeitas a planificação contábil própria apuram a CSLL de acordo com essa planificação.</p></li>
+</ol>
+<p><strong>Rendimentos de Capital (Investimentos Financeiros):</strong></p>
+<p>22,5% para aplicações com prazo de até 180 dias;<br />
+20,0% para aplicações com prazo de 181 até 360 dias;<br />
+17,5% para aplicações com prazo de 361 até 720 dias;<br />
+15,0% para aplicações com prazo acima de 720 dias.</p>
+<p><strong>Fundos de ações</strong>: 15%.</p>
+<p><strong>Fundos de previdência:</strong>
+35% para investimentos por um prazo de até 2 anos;<br />
+30% para investimentos de mais de 2 anos e menos de 4 anos;<br />
+25% para investimentos de mais de 4 anos e menos de 6 anos;<br />
+20% para investimentos de anos mais de 6 anos e menos de 8;<br />
+15% para investimentos de mais de 8 anos e menos de 10 anos;<br />
+10% para investimentos de mais de 10 anos.</p>
+</div>
+<p><span style="font-size: 80%">
+Fonte: <a href="http://receita.economia.gov.br/acesso-rapido/tributos/CSLL" class="uri">http://receita.economia.gov.br/acesso-rapido/tributos/CSLL</a>
+</span>
+<br></p>
+<p><strong>Tributação única:</strong> empresas que optam pelo regime <strong>Simples Nacional</strong>.<br />
+<strong>Tributação pelo lucro real</strong> = % sobre o lucro real apurado no período.<br />
+<strong>Tributação pelo lucro presumido</strong> = % sobre o lucro como % do faturamento no segmento em que atua a empresa.</p>
+<p>Existem vários tributos federais, estaduais e municipais.<br />
+Existem taxas e contribuições compulsórias (Senai, Senac e Sesi, Senar e sindicatos).</p>
+<p><strong>Esses impostos são sempre repassados ao consumidor?</strong><br />
+Depende de vários fatores, por exemplo, poder de mercado das empresas, possibilidade de substituição de produtos pelo consumidor e regulação setorial.</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-24"></span>
+<p class="caption">
+Figura 2.6: Alíquotas tributárias da pessoa jurídica nos Estados Unidos
+</p>
+<img src="Aula02_fig06.jpg" alt="Alíquotas tributárias da pessoa jurídica nos Estados Unidos" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.34</a>)</span>
+</span>
+<br></p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-25"></span>
+<p class="caption">
+Figura 2.7: Impostos e alíquotas tributárias dos Estados Unidos
+</p>
+<img src="Aula02_fig07.jpg" alt="Impostos e alíquotas tributárias dos Estados Unidos" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.35</a>)</span>
+</span>
+<br></p>
+</div>
+<div id="fluxo-de-caixa" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Fluxo de Caixa<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#fluxo-de-caixa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Fluxo de caixa é a quantidade de $ que entrou e a quantidade de $ que saiu. Nenhuma demonstração de resultados apresenta essas informações organizadas.</p>
+<p><strong>Fluxo de Caixa Operacional (FCO)</strong> = o caixa gerado pelas atividades operacionais normais de produção e venda de uma empresa. <strong>As despesas com financiamento não estão incluídas nessa conta.</strong></p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-26"></span>
+<p class="caption">
+Figura 2.8: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig08.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.38</a>)</span>
+</span>
+<br></p>
+<p><strong>FCO = receitas – custos – impostos</strong><br />
+FCO = lucros antes de juros e impostos + depreciação – impostos<br />
+FCO negativo quase sempre indica problemas</p>
+<p>Ver questões de definição: <strong>incluir ou não despesas financeiras como operacional.</strong> O autor afirma que não, pois não são despesas operacionais, pois <strong>independem</strong> das atividades comerciais da empresa.</p>
+<p><br>
+<img src="Aula02_fig09.jpg" width="100%" />
+<br></p>
+<p><strong>Gastos de Capital</strong></p>
+<p><span class="math display">\[
+\mathrm{CAPEX = capital\;expenditure = investimentos}
+\]</span>
+O valor gasto com ativos imobilizados menos o valor recebido da venda destes ativos. Gasto líquido é a despesa com ativos imobilizados, inclusive a depreciação do período.</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-28"></span>
+<p class="caption">
+Figura 2.9: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig10.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.39</a>)</span>
+</span>
+<br></p>
+<p><strong>Variação do Capital Circulante Líquido</strong></p>
+<p>Capital circulante líquido e variação do circulante</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-29"></span>
+<p class="caption">
+Figura 2.10: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig11.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.39</a>)</span>
+</span>
+<br></p>
+<p>Fluxo de caixa dos ativos = fluxo de caixa operacional + gastos de capital + variação do capital circulante líquido</p>
+<p>Um fluxo de caixa negativo é bastante comum em uma empresa em crescimento ou com investimento.</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-30"></span>
+<p class="caption">
+Figura 2.11: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig12.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.39</a>)</span>
+</span>
+<br></p>
+<p><strong>Observação sobre o Fluxo de Caixa “Livre”</strong><br />
+Caixa que a empresa pode distribuir aos credores e acionistas.</p>
+<p><span class="math display">\[
+\mathrm{Fluxo\;de\;caixa\;para\;credores = juros\;pagos - novos\;empréstimos\;líquidos}
+\]</span>
+O ideal é que os juros sejam menores que os empréstimos!</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-31"></span>
+<p class="caption">
+Figura 2.12: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig13.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.40</a>)</span>
+</span>
+<br></p>
+<p>Fluxo de Caixa para Acionistas = Dividendos e juros sobre o capital próprio pagos aos acionistas - aumentos de capital realizados pelos acionistas</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-32"></span>
+<p class="caption">
+Figura 2.13: Exemplo de fluxo de caixa
+</p>
+<img src="Aula02_fig14.jpg" alt="Exemplo de fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.40</a>)</span>
+</span>
+<br></p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-33"></span>
+<p class="caption">
+Figura 2.14: Exemplo: fluxo de caixa da Esmola Cola
+</p>
+<img src="Aula02_fig16.jpg" alt="Exemplo: fluxo de caixa da Esmola Cola" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.40</a>)</span>
+</span>
+<br></p>
+<p><br>
+<img src="Aula02_fig17.jpg" width="100%" />
+<br></p>
+<p><strong><span style="color:red">Ver planilha para outras contas e detalhes do BP e DRE.</span></strong></p>
+</div>
+<div id="resumo-e-conclusões-1" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Resumo e conclusões<a href="demostrações-contábeis-impostos-e-fluxos-de-caixa.html#resumo-e-conclusões-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Valor contábil é muito diferente de valor de mercado<br />
+O valor de mercado é o relevante para a administraçõa corporativa<br />
+O lucro líquido não é fluxo de caixa<br />
+Fluxo de caixa é o resultado das operações, do gasto com capital e do capital circulante</p>
+<br>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-35"></span>
+<p class="caption">
+Figura 2.15: Resumo do fluxo de caixa
+</p>
+<img src="Aula02_fig15.jpg" alt="Resumo do fluxo de caixa" width="100%" />
+</div>
+<p><span style="font-size: 80%">
+Fonte: <span class="citation">(<a href="#ref-ross2013fundamentoscp2" role="doc-biblioref">Ross et al. 2013g, pg.41</a>)</span>
+</span>
+<br></p>
+<p><strong><span style="color:red">Revisão de conceitos e questões instigantes.</span></strong></p>
+<p>Liquidez elevada e liquidez baixa<br />
+Contabilidade e fluxos de caixa</p>
+<p>Valores contábeis versus valores de mercado – como surgem as diferenças<br />
+Valores contábeis versus valores de mercado – é possível que o passivo exceda um ativo<br />
+</p>
+<p>Fluxos de caixa operacionais – explicar as diferenças com lucro contábil<br />
+Fluxo de caixa do ativo – se negativo, é ruim?<br />
+Fluxo de caixa operacional – se negativo, é ruim?<br />
+Fluxo de caixa para acionistas e credores– se negativo, é ruim? Como explicar?</p>
+<p>Variação do capital circulante líquido – se negativo, é ruim? Como explicar?<br />
+Gastos de capital – se negativo, é ruim? Como explicar?</p>
+<p>Valor do negócio – valor de mercado de suas dívidas e de suas ações menos o caixa e os equivalentes de caixa<br />
+Gerenciamento de resultados contábeis – diferimento de receitas, despesas e custos</p>
+
+</div>
+</div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-assaf2014financcascp5" class="csl-entry">
+———. 2014g. <span>“<span class="nocase">Estruturas das demonstrações contábeis brasileiras</span>.”</span> In <em><span class="nocase">Finanças Corporativas e Valor</span></em>, edited by Alexandre Assaf Neto, 7ed ed. <span>São Paulo</span>: Editora Atlas S.A.
+</div>
+<div id="ref-ross2013fundamentoscp2" class="csl-entry">
+———, et al. 2013g. <span>“<span class="nocase">Demostrações contábeis, impostos e fluxo de caixa</span>.”</span> In <em><span class="nocase">Fundamentos de administração financeira</span></em>, edited by Roberto Lamb, 9ed ed. Porto Alegre: Bookman Editora/AMGH Editora Ltda.
+</div>
+<div id="ref-ross2013fundamentoscp1" class="csl-entry">
+———, et al. 2013i. <span>“<span class="nocase">Introdução às Finanças Corporativas</span>.”</span> In <em><span class="nocase">Fundamentos de administração financeira</span></em>, edited by Roberto Lamb, 9ed ed. Porto Alegre: Bookman Editora/AMGH Editora Ltda.
+</div>
+<div id="ref-valor201808" class="csl-entry">
+Valor. 2018. <em>Valor Econômico &amp; Dow Jones Newswires</em>, August. <a href="https://valor.globo.com/empresas/noticia/2018/08/20/lucro-da-bhp-billiton-cai-37-no-ano-fiscal-encerrado-em-30-de-junho.ghtml">https://valor.globo.com/empresas/noticia/2018/08/20/lucro-da-bhp-billiton-cai-37-no-ano-fiscal-encerrado-em-30-de-junho.ghtml</a>.
+</div>
+<div id="ref-yahoo" class="csl-entry">
+Yahoo Finance. 2023. <span>“Stock Price Data from Yahoo Finance.”</span> <a href="https://finance.yahoo.com/">https://finance.yahoo.com/</a>.
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introdução-às-finanças-corporativas.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="trabalhando-com-demonstrações-contábeis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

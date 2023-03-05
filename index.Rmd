@@ -1,0 +1,154 @@
+---
+title: "Curso Financiamento e Investimento"
+author: "Ricardo Machado Ruiz"
+date: "Primeiro semestre de 2023"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+#url: your book url like https://bookdown.org/yihui/bookdown
+#cover-image: path to the social sharing image like images/cover.jpg
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  The HTML output format for this example is bookdown::gitbook,
+  set in the _output.yml file.
+link-citations: yes
+github-repo: rstudio/bookdown
+---
+
+
+# Apresentação {-#Apresentação}
+
+
+Código: ECN010 e ECN098\
+Turmas: Ciências Econômicas e Relações Econômicas Internacionais
+
+Classificação: Eletiva\
+Carga horária: 60 horas/aula, 4 créditos
+
+Período letivo: Primeiro semestre de 2023\
+Horários: 14:00 - 15:40 (Terça) e 14:00 - 15:40 (Quinta)
+
+## Ementa {-#Ementa}
+
+O curso é uma introdução às finanças corporativas. Apresentada conceitos básicos de balanços patrimonial e de demonstrativo de resultados. Define de fluxo de caixa, valor presente líquido e suas relações com taxa de juros, tempo e risco. Discute critérios para escolha de investimentos. Define retorno e risco como parte da estratégia de investimentos. Conceitua custo de capital e sua relação com captação de recursos. Por fim, discute alavancagem financeira e estrutura de capital.
+
+## Programa {-#Programa}
+
+### Parte I {-#Parte-I}
+
+1.  Introdução às Finanças Corporativas [@ross2013fundamentoscp1]\
+2.  Demonstrações Contábeis, Impostos e Fluxos de Caixa [@ross2013fundamentoscp2]\
+3.  Demonstrações Contábeis [@ross2013fundamentoscp3]\
+4.  Planejamento Financeiro de Longo Prazo e Crescimento [@ross2013fundamentoscp4]
+
+### Parte II {-#Parte-II}
+
+5.  Introdução à valoração: o valor do dinheiro no tempo [@ross2013fundamentoscp5]\
+6.  Avaliação por fluxos de caixa descontados [@ross2013fundamentoscp6]\
+7.  Taxas de Juros e Avaliação de Títulos de Dívida [@ross2013fundamentoscp7]\
+8.  Avaliação de Ações [@ross2013fundamentoscp8]
+
+### Parte III {-#Parte-III}
+
+9.  Valor Presente Líquido e Outros Critérios de Investimento [@ross2013fundamentoscp9]\
+10. Tomando Decisões de Investimento de Capital [@ross2013fundamentoscp10]\
+11. Análise e Avaliação de Projetos [@ross2013fundamentoscp11]
+
+#### Parte IV {-#Parte-IV}
+
+12. Retorno, Risco e Linha do Mercado de Títulos [@ross2013fundamentoscp13]\
+13. Custo de Capital [@ross2013fundamentoscp14]\
+14. Captação de Recursos [@ross2013fundamentoscp15]\
+15. Alavancagem Financeira e Política de Estrutura de Capital [@ross2013fundamentoscp16]
+
+## Estratégia didática e avaliação {-#Estratégica-didática-e-avaliação}
+
+As aulas presenciais com atividades complementares remotas que utilizarão a plataforma Zoom, cujo link será disponibilizado no *Microsoft Teams*. As atividades remotas serão aulas assíncronas, leitura de artigos e reportagens, links para entrevistas, filmes e documentários relacionados aos tópicos em discussão. **O curso terá três provas**:
+
+1ª Avaliação - Prova: 33 pontos\
+2ª Avaliação - Prova: 34 pontos\
+3ª Avaliação - Prova: 33 pontos\
+Exame Especial: 100 pontos
+
+## Cronograma de atividades {-#Cronograma-de-atividades}
+
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|Aula |Dia   | Matéria                                                     | Referências                                        |
++:===:+:====:+:============================================================+:===================================================+
+|1    |07/03 | Apresentação do curso                                       |                                                    |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|1    |07/03 | Introdução às Finanças Corporativas                         | [@ross2013fundamentoscp1; @assaf2014financcascp1]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|2    |09/03 | Estruturas das Demonstrações Contábeis                      | [@ross2013fundamentoscp2; @assaf2014financcascp5]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|3    |14/03 | Análise das Demonstrações Financeiras                       | [@ross2013fundamentoscp3; @assaf2014financcascp6]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|4    |16/03 | Análise das Demonstrações Financeiras                       | [@ross2013fundamentoscp3; @assaf2014financcascp6]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|5    |21/03 | Planejamento Financeiro de Longo Prazo e Crescimento        | [@ross2013fundamentoscp4; @assaf2014financcascp169]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|6    |23/03 | Introdução à Valoração: o valor do dinheiro no tempo        | [@ross2013fundamentoscp5; @assaf2014financcascp3]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|7    |28/03 | Avaliação por Fluxos de Caixa Descontados                   | [@ross2013fundamentoscp6; @assaf2014financcascp3]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|8    |30/03 | Avaliação por Fluxos de Caixa Descontados                   | [@ross2013fundamentoscp6; @assaf2014financcascp3]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|9    |04/04 | Taxas de Juros e Avaliação de Títulos de Dívida             | [@ross2013fundamentoscp7; @brealey2017cp3]         |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|10   |06/04 | Taxas de Juros e Avaliação de Títulos de Dívida             | [@ross2013fundamentoscp7; @brealey2017cp3]         |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|11   |11/04 | **Primeira Avaliação**                                      | Prova (Aulas de 01 a 10)                           |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|12   |13/04 | Avaliação de Ações                                          | [@ross2013fundamentoscp8; @assaf2014financcascp22] |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|13   |18/04 | Valor Presente Líquido e Outros Critérios de Investimento   | [@ross2013fundamentoscp9;@assaf2014financcascp1718]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|14   |20/04 | Valor Presente Líquido e Outros Critérios de Investimento   | [@ross2013fundamentoscp9;@assaf2014financcascp1718]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|15   |25/04 | Tomando Decisões de Investimento de Capital                 |[@ross2013fundamentoscp10;@assaf2014financcascp1819]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|16   |27/04 | Tomando Decisões de Investimento de Capital                 |[@ross2013fundamentoscp10;@assaf2014financcascp1819]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|17   |02/05 | Tomando Decisões de Investimento de Capital                 |[@ross2013fundamentoscp10] - Estudo de caso         |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|18   |04/05 | Estudo de Caso – Leilão de Saneamento Alagoas               |Documentos do BNDES (Relatórios e Planilhas)        |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|19   |09/05 | Análise e Avaliação de Projetos                             |[@ross2013fundamentoscp10;@assaf2014financcascp1419]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|20   |11/05 | Estudo de Caso                                              | A definir                                          |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|21   |16/05 | **Segunda Avaliação**                                       | Prova (Aulas 12 a 20)                              |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|22   |18/05 | Retorno, Risco e Linha do Mercado de Títulos                |[@ross2013fundamentoscp13;@assaf2014financcascp1012]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|23   |23/05 | Retorno, Risco e Linha do Mercado de Títulos                |[@ross2013fundamentoscp13;@assaf2014financcascp1012]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|24   |25/05 | Custo de Capital                                            |[@ross2013fundamentoscp14;@assaf2014financcascp1221]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|25   |30/05 | Custo de Capital                                            | Doc. Concessões Públicas, Min. Fazenda (2018)      |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|26   |01/06 | Custo de Capital e Criação de Valor                         |[@assaf2014financcascp21;@assaf2014financcascp31]   |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|27   |06/06 | Captação de Recursos                                        |[@ross2013fundamentoscp15;@assaf2014financcascp22]  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|28   |13/06 | Alavancagem Financeira e Estrutura de Capital               |[@ross2013fundamentoscp16;@assaf2014financcascp2324]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|29   |15/06 | Alavancagem Financeira e Estrutura de Capital               |[@ross2013fundamentoscp16;@assaf2014financcascp2324]|
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|30   |20/06 | **Terceira Avaliação**                                      | Prova (Aulas 22 a 29)                              |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+|31   |22/06 | **Exame Especial**                                          | Matéria a definir                                  |
++-----+------+-------------------------------------------------------------+----------------------------------------------------+
+
+## Bibliografia {-#Bibliografia}
+
+### Básica {-#Básica}
+
+- **ROSS, WESTERFIELD, JORDAN & LAMB (2013)**. *Fundamentos de Administração Financeira*, 9ª edição. Editora: McGraw Hill.\
+- **ROSS, WESTERFIELD & JAFFE (2013)**. *Fundamentals of Corporate Finance*, 10th edition. New York, McGraw-Hill Education.\
+- **ASSAF NETO (2014)**. *Finanças Corporativas e Valor*, 7ª Edição. São Paulo, Atlas.
+
+### Complementar {-#Complementar}
+
+- **BREALEY, MYERS & ALLEN (2017)**. *Principles of Corporate Finance*, 12th edition. New York, McGraw-Hill Education.\
+- **ROSS, WESTERFIELD, JAFFE & JORDAN (2019)**. *Corporate Finance*, 10th edition. New York, McGraw-Hill Education.
